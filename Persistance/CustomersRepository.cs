@@ -11,7 +11,11 @@ namespace Shop.Persistance
         private readonly CustomersDbContext _context;
         public CustomersRepository(CustomersDbContext context) => _context = context;
 
-        public async Task<IEnumerable<Customer>> GetCustomersAsync() => await _context.Customers.ToArrayAsync();
+        public async Task<IEnumerable<Customer>> GetCustomersAsync(bool includeOrders = false)
+        {
+            if (includeOrders) return await _context.Customers.Include(c => c.Orders).ToArrayAsync();
+            return await _context.Customers.ToArrayAsync();
+        }
 
         public Task<Customer> GetCustomerAsync(int id)
         {

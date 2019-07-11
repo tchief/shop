@@ -14,6 +14,7 @@ namespace Shop.Controllers
         public CustomersController(ICustomersRepository repository) => _repository = repository;
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Customer>>> GetCustomers() => Ok(await _repository.GetCustomersAsync());
+        public async Task<ActionResult<IEnumerable<Customer>>> GetCustomers(bool includeOrders = false)
+            => Ok(await _repository.GetCustomersAsync(includeOrders));
     }
 }

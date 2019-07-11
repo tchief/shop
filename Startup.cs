@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using Shop.Domain;
 using Shop.Persistance;
 
@@ -20,7 +22,12 @@ namespace Shop
             services.AddDbContext<CustomersDbContext>(opt => opt.UseSqlite(Configuration.GetConnectionString("Default")));
             services.AddScoped<ICustomersRepository, CustomersRepository>();
             
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
+                    .AddJsonOptions(options =>
+                    {
+                        options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+                        options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+                    });
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
