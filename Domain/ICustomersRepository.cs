@@ -10,8 +10,9 @@ namespace Shop.Domain
         Task<Customer> GetCustomerAsync(int id, bool includeOrders = false);
 
         Task<IEnumerable<Order>> GetOrdersAsync(int customerId);
+        Task<Order> GetOrderAsync(int orderId);
 
         Task<Customer> AddCustomerAsync(Customer customer);
-        Task AddOrderAsync(Order order);
+        Task<Order> AddOrderAsync(int customerId, Order order);
     }
 }

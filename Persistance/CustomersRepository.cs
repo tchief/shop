@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Shop.Domain;
 using Shop.Domain.Entities;
+using System.Linq;
 
 namespace Shop.Persistance
 {
@@ -19,8 +20,15 @@ namespace Shop.Persistance
                 .IncludeIf(c => c.Orders, includeOrders)
                 .SingleOrDefaultAsync(c => c.Id == id);
 
-        public Task<IEnumerable<Order>> GetOrdersAsync(int customerId)
-            => throw new System.NotImplementedException();
+        public async Task<IEnumerable<Order>> GetOrdersAsync(int customerId)
+        {
+            var customer = await GetCustomerAsync(customerId);
+            if (customer == null) return null;
+            return await _context.Orders.Where(o => o.CustomerId == customerId).ToArrayAsync();
+        }
+
+        public async Task<Order> GetOrderAsync(int orderId)
+            => await _context.Orders.SingleOrDefaultAsync(o => o.Id == orderId);
 
         public async Task<Customer> AddCustomerAsync(Customer customer)
         {
@@ -37,7 +45,23 @@ namespace Shop.Persistance
             return entity;
         }
 
-        public Task AddOrderAsync(Order order) 
-            => throw new System.NotImplementedException();
+        public async Task<Order> AddOrderAsync(int customerId, Order order)
+        {
+            var customer = await _context.Customers.SingleOrDefaultAsync(c => c.Id == customerId); 
+            if (customer == null) throw new CustomerNotFoundException(customerId);
+
+            var entity = new Order
+            {
+                Price = order.Price,
+                CreatedDate = order.CreatedDate,
+                CustomerId = customerId
+            };
+
+            _context.Orders.Add(entity);
+
+            await _context.SaveChangesAsync();
+
+            return entity;
+        }
     }
 }
