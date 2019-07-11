@@ -11,30 +11,21 @@ namespace Shop.Persistance
         private readonly CustomersDbContext _context;
         public CustomersRepository(CustomersDbContext context) => _context = context;
 
-        public async Task<IEnumerable<Customer>> GetCustomersAsync(bool includeOrders = false)
-        {
-            if (includeOrders) return await _context.Customers.Include(c => c.Orders).ToArrayAsync();
-            return await _context.Customers.ToArrayAsync();
-        }
+        public async Task<IEnumerable<Customer>> GetCustomersAsync(bool includeOrders = false) 
+            => await _context.Customers.IncludeIf(c => c.Orders, includeOrders).ToArrayAsync();
 
-        public Task<Customer> GetCustomerAsync(int id)
-        {
-            throw new System.NotImplementedException();
-        }
+        public async Task<Customer> GetCustomerAsync(int id, bool includeOrders = false) 
+            => await _context.Customers
+                .IncludeIf(c => c.Orders, includeOrders)
+                .SingleOrDefaultAsync(c => c.Id == id);
 
         public Task<IEnumerable<Order>> GetOrdersAsync(int customerId)
-        {
-            throw new System.NotImplementedException();
-        }
+            => throw new System.NotImplementedException();
 
         public Task AddCustomerAsync(Customer customer)
-        {
-            throw new System.NotImplementedException();
-        }
+            => throw new System.NotImplementedException();
 
-        public Task AddOrderAsync(Order order)
-        {
-            throw new System.NotImplementedException();
-        }
+        public Task AddOrderAsync(Order order) 
+            => throw new System.NotImplementedException();
     }
 }
