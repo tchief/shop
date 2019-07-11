@@ -9,3 +9,7 @@
 	 dotnet run
 	 ```
   4. Launch [https://localhost:5001/api/customers](https://localhost:5001/api/customers) in your browser or Postman
+  5. If you need clean database after some tests - just remove Shop.db and run:
+     ```
+	 dotnet ef database update
+	 ```

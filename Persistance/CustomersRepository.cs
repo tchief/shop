@@ -22,8 +22,20 @@ namespace Shop.Persistance
         public Task<IEnumerable<Order>> GetOrdersAsync(int customerId)
             => throw new System.NotImplementedException();
 
-        public Task AddCustomerAsync(Customer customer)
-            => throw new System.NotImplementedException();
+        public async Task<Customer> AddCustomerAsync(Customer customer)
+        {
+            var entity = new Customer
+            {
+                Name = customer.Name,
+                Email = customer.Email
+            };
+
+            _context.Customers.Add(entity);
+
+            await _context.SaveChangesAsync();
+
+            return entity;
+        }
 
         public Task AddOrderAsync(Order order) 
             => throw new System.NotImplementedException();

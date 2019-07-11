@@ -19,8 +19,15 @@ namespace Shop.Controllers
         public async Task<ActionResult<IEnumerable<Customer>>> GetCustomers(bool includeOrders = false)
             => Ok(await _repository.GetCustomersAsync(includeOrders));
 
-        [HttpGet("{id:int}")]
+        [HttpGet("{id:int}", Name = "GetCustomer")]
         public async Task<ActionResult<Customer>> GetCustomer(int id, bool includeOrders = false)
             => Ok(await _repository.GetCustomerAsync(id, includeOrders));
+
+        [HttpPost]
+        public async Task<ActionResult<Customer>> AddCustomer([FromBody] Customer customer)
+        {
+            var result = await _repository.AddCustomerAsync(customer);
+            return CreatedAtRoute("GetCustomer", new { result.Id }, result);
+        }
     }
 }

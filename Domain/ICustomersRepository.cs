@@ -11,7 +11,7 @@ namespace Shop.Domain
 
         Task<IEnumerable<Order>> GetOrdersAsync(int customerId);
 
-        Task AddCustomerAsync(Customer customer);
+        Task<Customer> AddCustomerAsync(Customer customer);
         Task AddOrderAsync(Order order);
     }
 }

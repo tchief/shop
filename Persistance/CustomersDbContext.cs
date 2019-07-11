@@ -12,16 +12,11 @@ namespace Shop.Persistance
 
         public CustomersDbContext(DbContextOptions<CustomersDbContext> options) : base(options)
         {
-            Database.EnsureDeleted();
-            Database.EnsureCreated();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            modelBuilder.Entity<Customer>().ToTable("Customers");
-            modelBuilder.Entity<Order>().ToTable("Orders");
             
             Seed(modelBuilder);
         }
