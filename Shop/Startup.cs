@@ -8,7 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Shop.Domain;
-using Shop.Persistance;
+using Shop.Persistence;
 using Shop.Web.Filters;
 
 namespace Shop

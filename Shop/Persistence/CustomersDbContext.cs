@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Shop.Domain.Entities;
 
-namespace Shop.Persistance
+namespace Shop.Persistence
 {
     public class CustomersDbContext : DbContext
     {

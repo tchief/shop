@@ -5,7 +5,7 @@ using Shop.Domain;
 using Shop.Domain.Entities;
 using System.Linq;
 
-namespace Shop.Persistance
+namespace Shop.Persistence
 {
     public class CustomersRepository: ICustomersRepository
     {

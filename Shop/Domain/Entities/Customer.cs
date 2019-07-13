@@ -17,6 +17,6 @@ namespace Shop.Domain.Entities
         [EmailAddress]
         public string Email { get; set; }
 
-        public IList<Order> Orders { get; private set; } = new List<Order>();
+        public IList<Order> Orders { get; } = new List<Order>();
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using FizzWare.NBuilder;
 using Shop.Domain.Entities;
 
-namespace Shop.Persistance
+namespace Shop.Persistence
 {
     internal static class RandomEntitiesGenerator
     {

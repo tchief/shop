@@ -3,9 +3,9 @@ using System;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace Shop.Persistance
+namespace Shop.Persistence
 {
-    public static class IQueryableExtensions
+    public static class QueryableExtensions
     {
         public static IQueryable<TEntity> IncludeIf<TEntity, TProperty>(
             this IQueryable<TEntity> source,
