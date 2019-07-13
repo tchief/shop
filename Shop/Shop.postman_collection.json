@@ -1,0 +1,649 @@
+{
+	"info": {
+		"name": "Shop",
+		"_postman_id": "fe9ea3b1-a25b-8718-2b9a-560dfb33c8e5",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customers",
+			"description": "",
+			"item": [
+				{
+					"name": "Commands",
+					"description": "",
+					"item": [
+						{
+							"name": "Create new valid customer",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "ed84fdd4-0880-4f0f-8ac5-474792924920",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"Status code is 201\", function () {",
+											"    pm.response.to.have.status(201);",
+											"});"
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Elon Musk\",\n    \"email\": \"elon.musk@mars.com\"\n}"
+								},
+								"url": {
+									"raw": "https://localhost:5001/api/customers/",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers",
+										""
+									]
+								},
+								"description": null
+							},
+							"response": []
+						},
+						{
+							"name": "Create new customer with missing name",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "363f9719-be3d-4634-9e31-4f25d199af2c",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"Status code is 400\", function () {",
+											"    pm.response.to.have.status(400);",
+											"});",
+											"",
+											"pm.test(\"Your test name\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.errors.name[0]).to.eql(\"The Name field is required.\");",
+											"});"
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"elon.musk@mars.com\"\n}"
+								},
+								"url": {
+									"raw": "https://localhost:5001/api/customers/",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers",
+										""
+									]
+								},
+								"description": null
+							},
+							"response": []
+						},
+						{
+							"name": "Create new customer with short name",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"El\",\n    \"email\": \"elon.musk@mars.com\"\n}"
+								},
+								"url": {
+									"raw": "https://localhost:5001/api/customers/",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers",
+										""
+									]
+								},
+								"description": null
+							},
+							"response": []
+						},
+						{
+							"name": "Create new customer with invalid email",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Elon Musk\",\n    \"email\": \"elon.musk.mars.com\"\n}"
+								},
+								"url": {
+									"raw": "https://localhost:5001/api/customers/",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers",
+										""
+									]
+								},
+								"description": null
+							},
+							"response": []
+						},
+						{
+							"name": "Create new customer with missing email",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Elon Musk\"\n}"
+								},
+								"url": {
+									"raw": "https://localhost:5001/api/customers/",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers",
+										""
+									]
+								},
+								"description": null
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Queries",
+					"description": "",
+					"item": [
+						{
+							"name": "Get all customers",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "https://localhost:5001/api/customers/",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers",
+										""
+									]
+								},
+								"description": null
+							},
+							"response": []
+						},
+						{
+							"name": "Get customer",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "https://localhost:5001/api/customers/",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers",
+										""
+									]
+								},
+								"description": null
+							},
+							"response": []
+						},
+						{
+							"name": "Get customer by invalid id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "https://localhost:5001/api/customers/999",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers",
+										"999"
+									]
+								},
+								"description": null
+							},
+							"response": []
+						},
+						{
+							"name": "Get customer with orders",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "https://localhost:5001/api/customers/1?includeOrders=true",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers",
+										"1"
+									],
+									"query": [
+										{
+											"key": "includeOrders",
+											"value": "true",
+											"equals": true
+										}
+									]
+								},
+								"description": null
+							},
+							"response": []
+						},
+						{
+							"name": "Get all customers with orders",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "https://localhost:5001/api/customers?includeOrders=true",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers"
+									],
+									"query": [
+										{
+											"key": "includeOrders",
+											"value": "true",
+											"equals": true
+										}
+									]
+								},
+								"description": null
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"description": "",
+			"item": [
+				{
+					"name": "Commands",
+					"description": "",
+					"item": [
+						{
+							"name": "Create new valid order",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"price\": 7156.12,\n    \"createdDate\": \"2019-02-13T01:24:53.6837968\"\n}"
+								},
+								"url": {
+									"raw": "https://localhost:5001/api/customers/1/orders",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers",
+										"1",
+										"orders"
+									]
+								},
+								"description": null
+							},
+							"response": []
+						},
+						{
+							"name": "Create new order with negative price",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"price\": -7156.12,\n    \"createdDate\": \"2019-02-13T01:24:53.6837968\"\n}"
+								},
+								"url": {
+									"raw": "https://localhost:5001/api/customers/1/orders",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers",
+										"1",
+										"orders"
+									]
+								},
+								"description": null
+							},
+							"response": []
+						},
+						{
+							"name": "Create new order with old date",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"price\": 7156.12,\n    \"createdDate\": \"1819-02-13T01:24:53.6837968\"\n}"
+								},
+								"url": {
+									"raw": "https://localhost:5001/api/customers/1/orders",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers",
+										"1",
+										"orders"
+									]
+								},
+								"description": null
+							},
+							"response": []
+						},
+						{
+							"name": "Create new order with missing price",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"createdDate\": \"2019-02-13T01:24:53.6837968\"\n}"
+								},
+								"url": {
+									"raw": "https://localhost:5001/api/customers/1/orders",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers",
+										"1",
+										"orders"
+									]
+								},
+								"description": null
+							},
+							"response": []
+						},
+						{
+							"name": "Create new order with missing date",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"price\": 7156.12,\n}"
+								},
+								"url": {
+									"raw": "https://localhost:5001/api/customers/1/orders",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers",
+										"1",
+										"orders"
+									]
+								},
+								"description": null
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Queries",
+					"description": "",
+					"item": [
+						{
+							"name": "Get all orders for customer",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "https://localhost:5001/api/customers/1/orders",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers",
+										"1",
+										"orders"
+									]
+								},
+								"description": "SHOULD BE UPDATED"
+							},
+							"response": []
+						},
+						{
+							"name": "Get all orders for invalid customer",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "https://localhost:5001/api/customers/999/orders",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers",
+										"999",
+										"orders"
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Get order for customer by valid id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "https://localhost:5001/api/customers/3/orders/196",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers",
+										"3",
+										"orders",
+										"196"
+									]
+								},
+								"description": "SHOULD BE UPDATED"
+							},
+							"response": []
+						},
+						{
+							"name": "Get order for customer by invalid id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "https://localhost:5001/api/customers/3/orders/196",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers",
+										"3",
+										"orders",
+										"196"
+									]
+								},
+								"description": null
+							},
+							"response": []
+						},
+						{
+							"name": "Get order for customer by invalid customer id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "https://localhost:5001/api/customers/999/orders/999",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers",
+										"999",
+										"orders",
+										"999"
+									]
+								},
+								"description": null
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		}
+	]
+}
