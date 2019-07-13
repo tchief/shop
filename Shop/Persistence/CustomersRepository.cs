@@ -27,8 +27,8 @@ namespace Shop.Persistence
             return await _context.Orders.Where(o => o.CustomerId == customerId).ToArrayAsync();
         }
 
-        public async Task<Order> GetOrderAsync(int orderId)
-            => await _context.Orders.SingleOrDefaultAsync(o => o.Id == orderId);
+        public async Task<Order> GetOrderAsync(int customerId, int orderId)
+            => await _context.Orders.SingleOrDefaultAsync(o => o.CustomerId == customerId && o.Id == orderId);
 
         public async Task<Customer> AddCustomerAsync(Customer customer)
         {

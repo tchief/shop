@@ -45,1502 +45,1502 @@ namespace Shop.Migrations
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 1, "syble_gutmann@gleason.com", "Daphne Erdman II" });
+                values: new object[] { 1, "giovanna.moen@upton.info", "Candido Koepp" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 73, "kyra_hamill@blandatrantow.uk", "Desiree Robel" });
+                values: new object[] { 73, "americo@friesen.name", "Mrs. Elnora Auer" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 72, "sarina@langworth.us", "Nannie Gleichner" });
+                values: new object[] { 72, "jazmin_goodwin@lindgrengislason.ca", "Kattie Boyle" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 71, "pablo_mohr@schoen.uk", "Marshall Lubowitz" });
+                values: new object[] { 71, "catherine.kovacek@parker.us", "Katlynn Rowe" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 70, "alysson@schmeler.uk", "Kelli Kuphal" });
+                values: new object[] { 70, "austin@walsh.ca", "Kyler Kirlin" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 69, "ernestina.von@hammes.us", "Ernie Funk" });
+                values: new object[] { 69, "lue@breitenbergschinner.co.uk", "Mrs. Aisha White" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 68, "laurence@monahan.co.uk", "Reece Kunde" });
+                values: new object[] { 68, "torrey.rosenbaum@lubowitz.co.uk", "Gilbert Weber" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 67, "lambert.swaniawski@zulaufblock.uk", "Dr. Bradly Beer" });
+                values: new object[] { 67, "edmund@upton.name", "Lilian Lesch Sr." });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 66, "gregory@abshiremuller.info", "Margret Braun" });
+                values: new object[] { 66, "wilford.bartell@croninschneider.ca", "Gay Lueilwitz" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 65, "destinee@pfannerstill.us", "Lukas Little" });
+                values: new object[] { 65, "dashawn.effertz@langluettgen.biz", "Nakia Bins" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 64, "noemy.legros@mrazwilliamson.com", "Aiyana Kunde" });
+                values: new object[] { 64, "morris@runolfssonwilkinson.name", "Kip Von" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 63, "santiago@torphy.ca", "Carlos Heaney" });
+                values: new object[] { 63, "sven@moorerippin.info", "Kristopher Ferry" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 62, "albertha@kertzmann.us", "Frieda Gusikowski DDS" });
+                values: new object[] { 62, "lucas.vandervort@funk.ca", "Sarah Doyle" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 61, "yesenia@anderson.us", "Carroll Wisozk" });
+                values: new object[] { 61, "merlin@runolfsson.us", "Lera Tromp" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 60, "candelario@lynch.info", "Isadore Zieme" });
+                values: new object[] { 60, "lennie@murray.ca", "Corene Corwin" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 59, "percy.stehr@torphy.biz", "Jessyca Lesch" });
+                values: new object[] { 59, "joel@abshirechamplin.us", "Celine McGlynn" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 58, "elvera_stracke@casperkozey.co.uk", "Cicero Koepp" });
+                values: new object[] { 58, "jewell@prosaccojast.co.uk", "Ezekiel Larkin" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 57, "jasper@watsica.co.uk", "Haley Bechtelar" });
+                values: new object[] { 57, "lauryn@mclaughlin.biz", "Dr. Kailyn Denesik" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 56, "connor@kuhn.info", "Elisha Trantow III" });
+                values: new object[] { 56, "gaetano@lynch.ca", "Mayra Stracke" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 55, "catalina_braun@glover.co.uk", "Mrs. Raegan Schmeler" });
+                values: new object[] { 55, "kennith.hand@pourosshields.name", "Robbie Kozey IV" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 54, "autumn.gaylord@bosco.co.uk", "Jeffery O'Kon" });
+                values: new object[] { 54, "missouri@runte.biz", "Dr. Brett Stroman" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 53, "alexandrea@farrellkerluke.us", "Maryam Brown" });
+                values: new object[] { 53, "violet.gleichner@johnston.uk", "Justina Heller" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 74, "ludie@balistreri.us", "Lue Pollich" });
+                values: new object[] { 74, "gail@von.info", "Jessyca Kuhlman" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 52, "delbert@kutch.us", "Dr. Ezequiel Lueilwitz" });
+                values: new object[] { 52, "bernice@okeefe.name", "Blake Conroy" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 75, "cecil_fay@darekassulke.us", "Jordan West" });
+                values: new object[] { 75, "sean@haneveum.ca", "Jayme Schuster DDS" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 77, "amara@stamm.name", "Tate Walker DDS" });
+                values: new object[] { 77, "ashlynn.huels@johnsonstanton.info", "Eudora Boyer" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 98, "marjolaine.mann@hettinger.co.uk", "Marilyne Conroy" });
+                values: new object[] { 98, "elliott@grimes.uk", "Lourdes Schuster PhD" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 97, "jessyca@keeling.co.uk", "Stone Goyette" });
+                values: new object[] { 97, "timothy@quigleygreenfelder.uk", "Elvie Hirthe II" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 96, "emerson_douglas@wiegand.ca", "Nathen Lehner" });
+                values: new object[] { 96, "zelda.zemlak@cormier.com", "Jayce Mueller" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 95, "jasmin@heller.name", "Archibald Hintz" });
+                values: new object[] { 95, "syble.shields@murazikklein.name", "Layne Beer Sr." });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 94, "alejandra@schultz.uk", "Brandyn Abbott" });
+                values: new object[] { 94, "rafaela@yundtrunte.us", "Ms. Duncan Stehr" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 93, "imani@miller.info", "Alisha Spencer" });
+                values: new object[] { 93, "frieda@goodwin.uk", "Wendy Osinski" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 92, "ned_roob@feeneyosinski.us", "Elsa Schulist" });
+                values: new object[] { 92, "myah.powlowski@schimmel.com", "Madisen Conn" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 91, "mabelle@pouroscrona.biz", "Patsy Tromp" });
+                values: new object[] { 91, "dorothy@wolf.com", "Quinn Doyle" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 90, "karolann_tremblay@yundt.com", "Ms. Casimer Barton" });
+                values: new object[] { 90, "ada@volkman.uk", "Emma Rau" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 89, "wendell.buckridge@runtelegros.biz", "Cassidy Orn" });
+                values: new object[] { 89, "hipolito_parker@green.com", "Claud Tremblay" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 88, "estrella@jacobsherzog.name", "Lenny Cassin" });
+                values: new object[] { 88, "laila.ritchie@ratke.info", "Madisen Medhurst" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 87, "casimir@konopelski.name", "Mose Muller" });
+                values: new object[] { 87, "verdie.stracke@macejkovic.info", "Jordi Kuhn" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 86, "winston@hodkiewicz.uk", "Alena Lemke" });
+                values: new object[] { 86, "raul_eichmann@koepp.info", "Wilburn Osinski" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 85, "candelario.mohr@rice.info", "Dr. Darrin Leannon" });
+                values: new object[] { 85, "vida@satterfield.com", "Robbie Ebert" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 84, "melyssa@schaefer.co.uk", "Ebony Schinner" });
+                values: new object[] { 84, "sonny@roobjenkins.co.uk", "Kenny Luettgen I" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 83, "bryana_rutherford@hayesrau.name", "Leora Walker" });
+                values: new object[] { 83, "jaydon@hudson.com", "Verner Muller" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 82, "alford@corwinfarrell.uk", "Raymond Lehner" });
+                values: new object[] { 82, "jacynthe@reichel.biz", "Ms. Wilber Brown" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 81, "idella.spencer@robel.com", "Caden Wolf" });
+                values: new object[] { 81, "roger.west@flatley.biz", "Delmer Macejkovic I" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 80, "arianna@hilpert.com", "Layne Bahringer" });
+                values: new object[] { 80, "mina@schaden.uk", "Eveline Terry Sr." });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 79, "adrian.powlowski@steuber.co.uk", "Bennie Ebert" });
+                values: new object[] { 79, "whitney@parisian.us", "Raul Carter" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 78, "percy_jewess@bogisich.name", "Willie Romaguera" });
+                values: new object[] { 78, "colten@daugherty.biz", "Robbie Raynor" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 76, "ubaldo@dach.com", "Vernice Pagac" });
+                values: new object[] { 76, "mathilde.parker@heaneykeeling.us", "Mrs. Aditya Langosh" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 51, "kaley.dickinson@eichmann.co.uk", "Jade Bins V" });
+                values: new object[] { 51, "ricardo@armstrong.us", "Crystel Christiansen II" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 50, "maggie@langworthhayes.uk", "Logan Adams" });
+                values: new object[] { 50, "melyna_keeling@heidenreich.biz", "Muhammad Bins" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 49, "olen_hane@sporer.us", "Delfina Cummings" });
+                values: new object[] { 49, "ethan@wehnerokeefe.name", "Arthur Leffler" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 22, "jan@kuphalmonahan.info", "Onie Langworth DDS" });
+                values: new object[] { 22, "delilah.bartell@wisozk.uk", "Miss Dixie Johnson" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 21, "lionel_pouros@jakubowskiorn.com", "Nyah Rippin" });
+                values: new object[] { 21, "einar_wintheiser@jerde.name", "Jason Jenkins" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 20, "quinn@oreillyhilll.com", "Madisyn Wilkinson" });
+                values: new object[] { 20, "waldo@hegmanncorwin.co.uk", "Benedict Hoeger" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 19, "alison@schinner.info", "Jefferey Emmerich" });
+                values: new object[] { 19, "christina@baumbach.info", "Dr. Gennaro Haag" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 18, "kellie@greenbeer.uk", "Edwardo Langosh" });
+                values: new object[] { 18, "david_bode@ryan.ca", "Aurelie Hickle" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 17, "liliana_stark@powlowskifisher.info", "Wilfred Raynor MD" });
+                values: new object[] { 17, "maye.koelpin@blanda.co.uk", "Dr. Hettie Towne" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 16, "chet.rau@schneiderstanton.biz", "Jazmin Terry" });
+                values: new object[] { 16, "esta_ohara@mcglynn.info", "Madalyn Breitenberg" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 15, "adell@mcglynnbergnaum.us", "Gerard Beahan" });
+                values: new object[] { 15, "amara@lueilwitzmann.ca", "Delphia Schuster PhD" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 14, "anahi_christiansen@schmittchamplin.co.uk", "Taya Schoen" });
+                values: new object[] { 14, "nola_pollich@crooks.biz", "Jayda Lueilwitz IV" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 13, "jayce@schiller.co.uk", "Leone Ratke" });
+                values: new object[] { 13, "adele@parisian.co.uk", "Letitia Rogahn" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 12, "abraham_prosacco@kunzegreen.name", "Herminio Nader" });
+                values: new object[] { 12, "general@gusikowski.uk", "Bessie Muller" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 11, "erna@yundt.com", "Boyd Hane Sr." });
+                values: new object[] { 11, "mike@corkery.name", "Javier Rohan" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 10, "bulah@blockhintz.name", "Amos Kunde" });
+                values: new object[] { 10, "rita_gislason@powlowski.name", "Elmer Frami" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 9, "rebecca@fritsch.info", "Sidney Frami V" });
+                values: new object[] { 9, "gloria.johnson@littel.us", "Celestine Bogisich PhD" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 8, "judge_wilderman@nader.com", "Khalil Rippin" });
+                values: new object[] { 8, "quinten@gleasongreenholt.co.uk", "Jasen Jacobs" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 7, "dominique@halvorson.info", "Ashleigh Tremblay" });
+                values: new object[] { 7, "mireya@kuvalis.biz", "Toney Rutherford" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 6, "roxanne@kris.com", "Marlin Spencer PhD" });
+                values: new object[] { 6, "damian.johnson@bogan.com", "Camylle King" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 5, "roselyn@pouros.name", "Kristy Wintheiser" });
+                values: new object[] { 5, "melvin.marvin@cartwright.info", "Isaias Collins" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 4, "ronny@pagac.biz", "Hailee Zemlak" });
+                values: new object[] { 4, "ocie@rohan.info", "Larry Strosin" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 3, "catalina_kerluke@bechtelar.co.uk", "Florine Brekke" });
+                values: new object[] { 3, "maximilian_wiza@ankunding.ca", "Trystan Gottlieb" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 2, "bonita@labadie.uk", "Mr. Maribel Raynor" });
+                values: new object[] { 2, "joan.maggio@deckowgreenfelder.us", "Bradford Reynolds" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 23, "violet_smitham@kris.com", "Ruthe Grady" });
+                values: new object[] { 23, "justyn.hilpert@waelchi.co.uk", "Uriah Yundt" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 24, "benny_mcdermott@lemkequigley.com", "Stefan Greenfelder" });
+                values: new object[] { 24, "jalyn.mueller@bernhard.uk", "Garland Borer" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 25, "casimir@harvey.com", "Mason Wilkinson" });
+                values: new object[] { 25, "blair_mcglynn@walsheffertz.us", "Dr. Winfield Gerhold" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 26, "jacinto.olson@steuber.name", "Hassan Tillman" });
+                values: new object[] { 26, "tremaine@bashirian.com", "Willa Goldner" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 48, "kareem@stokes.name", "Theodora Wilderman" });
+                values: new object[] { 48, "hilda_wintheiser@champlin.biz", "Lamont Batz II" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 47, "jake@waters.us", "Crystal Feeney" });
+                values: new object[] { 47, "katherine_hintz@kris.uk", "Jorge Schaden" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 46, "beth@zemlakward.co.uk", "Murl Moore" });
+                values: new object[] { 46, "jeramy@cummerata.com", "Gisselle Reichel" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 45, "marco.beahan@littelkemmer.uk", "Madison Morar" });
+                values: new object[] { 45, "chaz@dietrichpouros.biz", "Dallas Green" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 44, "lydia@schneider.biz", "Haley Kling" });
+                values: new object[] { 44, "juliana@balistrericartwright.ca", "Rhiannon Jakubowski" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 43, "macey_greenholt@durgandurgan.us", "Novella Langworth IV" });
+                values: new object[] { 43, "lavinia@beckerkozey.com", "Buddy Lowe" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 42, "wanda@powlowski.com", "Angie McGlynn" });
+                values: new object[] { 42, "colton@murazik.biz", "Virgie Kris" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 41, "luisa@hoeger.uk", "Lamar Morar" });
+                values: new object[] { 41, "kendrick@torphy.info", "Meredith Buckridge" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 40, "deangelo@abernathy.name", "Judge Aufderhar" });
+                values: new object[] { 40, "kendall@torp.info", "Nona Medhurst III" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 39, "jaren@gulgowski.info", "Zack King" });
+                values: new object[] { 39, "santos_halvorson@yost.biz", "Otha Sipes" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 99, "watson@pfannerstill.info", "Magdalena Batz" });
+                values: new object[] { 99, "daren_schulist@ziemannanderson.com", "Ashton Torp" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 38, "ezra@hermann.name", "Shaina Kilback" });
+                values: new object[] { 38, "antonetta_kerluke@jerdeyundt.us", "Desmond Larson" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 36, "raoul_bernhard@ernser.biz", "Maurine Wehner" });
+                values: new object[] { 36, "kenny@effertz.name", "Mrs. Madge Hoeger" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 35, "adele_kessler@damore.ca", "Tod Hayes" });
+                values: new object[] { 35, "weldon.kuvalis@walker.uk", "Whitney Haag" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 34, "tamara@watsica.name", "Dr. Cecilia Orn" });
+                values: new object[] { 34, "harold@feeneyhilpert.uk", "Valentina Blick IV" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 33, "ezra.feil@dare.name", "Hertha Hodkiewicz" });
+                values: new object[] { 33, "maddison_treutel@vandervortankunding.uk", "Jeromy Casper" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 32, "jules@millerbruen.us", "Ora Moen" });
+                values: new object[] { 32, "issac@hettingerboehm.info", "Hal Kohler" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 31, "jettie@ohara.com", "Brett Boehm" });
+                values: new object[] { 31, "bernita@stracke.com", "Joannie Rogahn I" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 30, "monty_lebsack@reilly.us", "Ozella Kuhlman" });
+                values: new object[] { 30, "cali.bradtke@lowevolkman.com", "Jan Roberts" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 29, "agustin.franecki@douglas.ca", "Alexis Johnson III" });
+                values: new object[] { 29, "jaylon@kozey.us", "Carolyn Rodriguez" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 28, "monique_ullrich@kessler.biz", "Darrel Goyette" });
+                values: new object[] { 28, "beryl@schmitt.biz", "Sarah Luettgen" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 27, "lewis@larsonhessel.biz", "Madalyn Willms" });
+                values: new object[] { 27, "kenton_hegmann@johns.co.uk", "Leopold Cronin" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 37, "lester@oreillyvandervort.ca", "Zita Mitchell DVM" });
+                values: new object[] { 37, "esteban_yost@torphy.biz", "Karl Wyman" });
 
             migrationBuilder.InsertData(
                 table: "Customers",
                 columns: new[] { "Id", "Email", "Name" },
-                values: new object[] { 100, "susan.damore@stokes.info", "Samir Leffler" });
+                values: new object[] { 100, "dennis_romaguera@okeefeconn.biz", "Madilyn Swaniawski" });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 1, new DateTime(2018, 10, 31, 1, 24, 53, 678, DateTimeKind.Local).AddTicks(7965), 1, 51693.2887m });
+                values: new object[] { 29, new DateTime(2018, 11, 17, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 1, 41735.3269m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 54, new DateTime(2019, 1, 23, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 60, 76561.2247m });
+                values: new object[] { 187, new DateTime(2018, 11, 2, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 55, 12221.3216m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 2, new DateTime(2018, 12, 27, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 61, 68991.2517m });
+                values: new object[] { 179, new DateTime(2018, 11, 3, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 56, 77576.1521m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 10, new DateTime(2019, 4, 6, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 61, 54274.945m });
+                values: new object[] { 71, new DateTime(2019, 4, 8, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 57, 23258.1698m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 102, new DateTime(2019, 5, 21, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 61, 4870.1933m });
+                values: new object[] { 169, new DateTime(2019, 3, 9, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 57, 60782.1490m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 105, new DateTime(2019, 5, 31, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 61, 13021.2587m });
+                values: new object[] { 37, new DateTime(2018, 9, 29, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 58, 32127.2513m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 15, new DateTime(2019, 3, 27, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 62, 82493.3545m });
+                values: new object[] { 135, new DateTime(2018, 12, 18, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 58, 53223.798m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 64, new DateTime(2018, 11, 23, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 62, 92268.1052m });
+                values: new object[] { 61, new DateTime(2019, 4, 28, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 59, 34089.838m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 192, new DateTime(2019, 4, 3, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 62, 75613.2582m });
+                values: new object[] { 82, new DateTime(2018, 12, 22, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 59, 78638.3200m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 5, new DateTime(2018, 10, 4, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 63, 2452.3914m });
+                values: new object[] { 103, new DateTime(2019, 3, 12, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 59, 17841.2839m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 57, new DateTime(2019, 4, 29, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 63, 87177.415m });
+                values: new object[] { 20, new DateTime(2019, 5, 10, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 60, 28262.831m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 67, new DateTime(2018, 9, 22, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 63, 12929.107m });
+                values: new object[] { 48, new DateTime(2019, 5, 31, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 60, 71286.2685m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 153, new DateTime(2018, 11, 13, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 63, 37430.2172m });
+                values: new object[] { 104, new DateTime(2019, 5, 18, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 60, 79267.110m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 171, new DateTime(2019, 1, 17, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 63, 76731.210m });
+                values: new object[] { 19, new DateTime(2019, 6, 10, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 61, 86159.615m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 145, new DateTime(2018, 11, 23, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 64, 45340.3715m });
+                values: new object[] { 134, new DateTime(2018, 12, 12, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 62, 4674.3815m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 68, new DateTime(2019, 4, 4, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 66, 7614.3280m });
+                values: new object[] { 69, new DateTime(2018, 12, 7, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 63, 39638.408m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 8, new DateTime(2019, 3, 9, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 68, 61871.1466m });
+                values: new object[] { 45, new DateTime(2018, 12, 31, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 64, 83473.827m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 149, new DateTime(2018, 12, 11, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 68, 5074.1243m });
+                values: new object[] { 74, new DateTime(2018, 10, 19, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 66, 87990.3757m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 94, new DateTime(2019, 5, 10, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 70, 61313.1991m });
+                values: new object[] { 34, new DateTime(2018, 10, 15, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 67, 51356.2164m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 159, new DateTime(2018, 10, 6, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 70, 43895.94m });
+                values: new object[] { 25, new DateTime(2019, 5, 20, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 69, 18500.2869m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 62, new DateTime(2019, 1, 22, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 71, 38576.321m });
+                values: new object[] { 73, new DateTime(2019, 2, 10, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 70, 66666.1634m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 73, new DateTime(2018, 10, 10, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 71, 29763.3689m });
+                values: new object[] { 150, new DateTime(2019, 3, 21, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 70, 34328.405m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 114, new DateTime(2018, 11, 7, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 59, 9977.3694m });
+                values: new object[] { 132, new DateTime(2019, 1, 19, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 55, 3915.1514m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 179, new DateTime(2018, 11, 5, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 71, 72066.208m });
+                values: new object[] { 199, new DateTime(2019, 6, 15, 0, 58, 51, 676, DateTimeKind.Local).AddTicks(3111), 71, 19533.1243m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 178, new DateTime(2019, 6, 12, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 58, 27.2043m });
+                values: new object[] { 35, new DateTime(2019, 3, 31, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 55, 19738.2115m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 107, new DateTime(2019, 3, 1, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 58, 43900.1600m });
+                values: new object[] { 7, new DateTime(2019, 7, 5, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 54, 94439.638m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 12, new DateTime(2018, 12, 26, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 47, 38230.226m });
+                values: new object[] { 137, new DateTime(2019, 4, 25, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 44, 62883.217m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 113, new DateTime(2019, 1, 24, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 48, 82105.26m });
+                values: new object[] { 43, new DateTime(2018, 10, 25, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 45, 40354.1979m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 137, new DateTime(2018, 12, 10, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 48, 68464.3597m });
+                values: new object[] { 116, new DateTime(2019, 1, 22, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 45, 27792.2949m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 195, new DateTime(2019, 2, 25, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 48, 9254.605m });
+                values: new object[] { 126, new DateTime(2019, 3, 14, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 45, 15411.79m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 71, new DateTime(2019, 2, 4, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 49, 93022.3879m });
+                values: new object[] { 113, new DateTime(2019, 7, 11, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 46, 6538.1261m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 101, new DateTime(2019, 3, 16, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 49, 90426.3803m });
+                values: new object[] { 148, new DateTime(2019, 3, 3, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 46, 91379.633m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 4, new DateTime(2019, 7, 9, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 50, 22541.3151m });
+                values: new object[] { 23, new DateTime(2019, 3, 5, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 47, 7807.3462m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 9, new DateTime(2019, 5, 17, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 50, 30290.735m });
+                values: new object[] { 31, new DateTime(2019, 2, 16, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 47, 49502.3160m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 116, new DateTime(2019, 4, 13, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 51, 23262.1585m });
+                values: new object[] { 160, new DateTime(2018, 10, 4, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 47, 51302.3270m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 175, new DateTime(2018, 12, 7, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 51, 18043.546m });
+                values: new object[] { 42, new DateTime(2018, 12, 12, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 48, 75830.3722m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 124, new DateTime(2019, 1, 12, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 53, 25555.1193m });
+                values: new object[] { 166, new DateTime(2018, 12, 14, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 48, 20487.3132m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 6, new DateTime(2018, 10, 20, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 54, 71630.766m });
+                values: new object[] { 195, new DateTime(2018, 9, 25, 0, 58, 51, 676, DateTimeKind.Local).AddTicks(3111), 48, 68392.3484m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 36, new DateTime(2019, 4, 5, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 54, 6598.412m });
+                values: new object[] { 75, new DateTime(2019, 7, 9, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 49, 36026.2989m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 106, new DateTime(2018, 10, 2, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 54, 20675.961m });
+                values: new object[] { 153, new DateTime(2018, 12, 5, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 49, 29669.627m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 199, new DateTime(2019, 6, 22, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 54, 11254.1655m });
+                values: new object[] { 118, new DateTime(2018, 11, 26, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 50, 77649.3440m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 18, new DateTime(2019, 1, 14, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 55, 88800.1637m });
+                values: new object[] { 180, new DateTime(2019, 6, 5, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 50, 7064.729m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 31, new DateTime(2019, 4, 26, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 55, 83631.747m });
+                values: new object[] { 14, new DateTime(2019, 6, 19, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 52, 86021.3773m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 143, new DateTime(2019, 6, 3, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 55, 28043.630m });
+                values: new object[] { 80, new DateTime(2018, 10, 28, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 52, 27820.2710m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 127, new DateTime(2018, 11, 9, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 56, 62157.3822m });
+                values: new object[] { 93, new DateTime(2019, 1, 28, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 52, 22792.2141m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 166, new DateTime(2018, 11, 18, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 56, 49676.3366m });
+                values: new object[] { 105, new DateTime(2019, 3, 31, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 52, 39841.1414m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 136, new DateTime(2018, 11, 16, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 57, 96702.999m });
+                values: new object[] { 18, new DateTime(2019, 5, 7, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 53, 96228.2272m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 167, new DateTime(2019, 5, 13, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 58, 58889.371m });
+                values: new object[] { 152, new DateTime(2019, 6, 27, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 54, 98287.3272m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 148, new DateTime(2019, 4, 13, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 46, 11707.3038m });
+                values: new object[] { 9, new DateTime(2019, 4, 18, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 44, 10012.2415m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 119, new DateTime(2019, 5, 1, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 72, 79745.1538m });
+                values: new object[] { 59, new DateTime(2018, 9, 24, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 72, 3175.165m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 33, new DateTime(2018, 12, 20, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 74, 12729.2241m });
+                values: new object[] { 94, new DateTime(2018, 12, 11, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 74, 36585.3477m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 82, new DateTime(2018, 12, 16, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 91, 14340.2317m });
+                values: new object[] { 125, new DateTime(2019, 3, 29, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 88, 1775.1526m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 104, new DateTime(2018, 10, 21, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 91, 21799.3256m });
+                values: new object[] { 171, new DateTime(2019, 4, 11, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 88, 86700.1057m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 184, new DateTime(2018, 12, 8, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 91, 98918.3409m });
+                values: new object[] { 140, new DateTime(2018, 11, 24, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 89, 52901.2257m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 39, new DateTime(2018, 12, 21, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 92, 47305.768m });
+                values: new object[] { 185, new DateTime(2019, 3, 9, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 89, 8128.2328m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 46, new DateTime(2019, 3, 22, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 93, 6983.2669m });
+                values: new object[] { 174, new DateTime(2018, 10, 28, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 90, 98659.563m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 170, new DateTime(2018, 12, 13, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 93, 35020.2948m });
+                values: new object[] { 182, new DateTime(2018, 11, 3, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 90, 6894.1472m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 3, new DateTime(2019, 7, 8, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 94, 36034.1176m });
+                values: new object[] { 143, new DateTime(2019, 2, 18, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 91, 86562.1032m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 88, new DateTime(2019, 6, 7, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 94, 50119.236m });
+                values: new object[] { 120, new DateTime(2018, 11, 3, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 92, 98955.2071m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 156, new DateTime(2019, 2, 3, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 94, 23140.2312m });
+                values: new object[] { 170, new DateTime(2019, 5, 31, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 92, 31011.2835m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 189, new DateTime(2019, 3, 28, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 94, 22938.2125m });
+                values: new object[] { 2, new DateTime(2018, 10, 12, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 93, 54815.1872m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 61, new DateTime(2018, 9, 17, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 95, 2879.3263m });
+                values: new object[] { 108, new DateTime(2018, 10, 5, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 93, 5984.2274m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 77, new DateTime(2019, 6, 13, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 95, 98583.2525m });
+                values: new object[] { 1, new DateTime(2019, 6, 14, 0, 58, 51, 671, DateTimeKind.Local).AddTicks(3109), 94, 17341.910m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 63, new DateTime(2018, 10, 26, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 96, 13946.1594m });
+                values: new object[] { 52, new DateTime(2019, 6, 2, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 94, 13322.2624m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 172, new DateTime(2019, 1, 24, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 96, 56841.37m });
+                values: new object[] { 62, new DateTime(2019, 6, 24, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 94, 70633.3961m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 53, new DateTime(2018, 12, 18, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 97, 77269.2133m });
+                values: new object[] { 186, new DateTime(2019, 5, 7, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 94, 40561.82m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 169, new DateTime(2019, 4, 8, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 97, 59066.3624m });
+                values: new object[] { 145, new DateTime(2018, 11, 17, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 95, 24879.3719m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 154, new DateTime(2019, 6, 30, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 98, 39032.2889m });
+                values: new object[] { 110, new DateTime(2018, 9, 19, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 97, 57224.2740m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 173, new DateTime(2019, 5, 6, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 99, 69734.2587m });
+                values: new object[] { 89, new DateTime(2018, 11, 13, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 98, 57345.2824m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 200, new DateTime(2018, 9, 21, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 99, 6230.1230m });
+                values: new object[] { 46, new DateTime(2019, 4, 10, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 99, 15073.177m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 27, new DateTime(2018, 10, 18, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 100, 62425.1183m });
+                values: new object[] { 57, new DateTime(2019, 2, 19, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 99, 16443.2435m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 146, new DateTime(2018, 9, 27, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 100, 22485.2894m });
+                values: new object[] { 88, new DateTime(2018, 10, 28, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 99, 25880.3664m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 24, new DateTime(2019, 5, 7, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 91, 75747.956m });
+                values: new object[] { 122, new DateTime(2019, 4, 21, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 87, 47091.1675m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 70, new DateTime(2019, 7, 2, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 73, 21353.2866m });
+                values: new object[] { 158, new DateTime(2018, 11, 24, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 73, 98218.53m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 128, new DateTime(2018, 12, 11, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 90, 99144.1536m });
+                values: new object[] { 10, new DateTime(2018, 12, 19, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 87, 83621.1m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 83, new DateTime(2018, 10, 2, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 89, 10658.3838m });
+                values: new object[] { 86, new DateTime(2019, 3, 30, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 86, 56902.3718m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 45, new DateTime(2018, 9, 20, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 74, 25634.3425m });
+                values: new object[] { 63, new DateTime(2018, 10, 20, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 75, 37802.1990m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 66, new DateTime(2019, 1, 19, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 74, 25312.2395m });
+                values: new object[] { 78, new DateTime(2018, 12, 23, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 75, 26974.570m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 91, new DateTime(2019, 6, 18, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 77, 60294.3384m });
+                values: new object[] { 95, new DateTime(2018, 9, 29, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 75, 77241.2008m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 182, new DateTime(2019, 2, 7, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 77, 93999.617m });
+                values: new object[] { 100, new DateTime(2019, 4, 8, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 75, 77990.1834m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 48, new DateTime(2019, 5, 14, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 78, 64398.3177m });
+                values: new object[] { 26, new DateTime(2019, 5, 9, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 76, 37210.2334m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 100, new DateTime(2019, 3, 12, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 79, 79003.1351m });
+                values: new object[] { 117, new DateTime(2018, 12, 22, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 76, 92610.3460m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 129, new DateTime(2019, 1, 7, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 79, 42725.295m });
+                values: new object[] { 146, new DateTime(2019, 5, 7, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 76, 45230.3882m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 76, new DateTime(2019, 4, 18, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 80, 68013.3924m });
+                values: new object[] { 8, new DateTime(2018, 12, 20, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 77, 9685.1614m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 147, new DateTime(2019, 4, 21, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 80, 72232.2992m });
+                values: new object[] { 28, new DateTime(2018, 9, 29, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 77, 56857.3021m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 32, new DateTime(2019, 4, 2, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 82, 96282.552m });
+                values: new object[] { 91, new DateTime(2019, 7, 4, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 79, 61777.1835m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 49, new DateTime(2018, 10, 12, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 82, 95763.3496m });
+                values: new object[] { 72, new DateTime(2018, 11, 3, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 80, 63616.1m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 89, new DateTime(2019, 3, 1, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 82, 81642.1956m });
+                values: new object[] { 165, new DateTime(2018, 12, 11, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 80, 14049.3136m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 161, new DateTime(2019, 6, 3, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 82, 3556.3191m });
+                values: new object[] { 64, new DateTime(2019, 2, 15, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 81, 39820.1075m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 38, new DateTime(2018, 10, 28, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 84, 25537.843m });
+                values: new object[] { 87, new DateTime(2018, 9, 24, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 81, 28609.3754m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 74, new DateTime(2018, 11, 8, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 84, 79562.306m });
+                values: new object[] { 97, new DateTime(2018, 11, 10, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 82, 82385.310m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 81, new DateTime(2018, 9, 25, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 84, 61065.2010m });
+                values: new object[] { 58, new DateTime(2019, 7, 1, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 83, 69214.3861m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 86, new DateTime(2018, 10, 17, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 84, 70114.3193m });
+                values: new object[] { 50, new DateTime(2018, 12, 24, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 84, 14862.2442m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 13, new DateTime(2018, 12, 12, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 85, 61013.2772m });
+                values: new object[] { 21, new DateTime(2018, 11, 12, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 85, 46148.367m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 50, new DateTime(2018, 12, 25, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 87, 6285.2938m });
+                values: new object[] { 141, new DateTime(2018, 12, 8, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 85, 88079.2362m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 95, new DateTime(2019, 5, 13, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 87, 32119.211m });
+                values: new object[] { 192, new DateTime(2019, 2, 16, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 85, 35789.960m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 191, new DateTime(2019, 2, 10, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 87, 46494.1986m });
+                values: new object[] { 193, new DateTime(2019, 3, 28, 0, 58, 51, 676, DateTimeKind.Local).AddTicks(3111), 85, 1915.1352m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 118, new DateTime(2018, 9, 23, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 90, 31277.2608m });
+                values: new object[] { 6, new DateTime(2019, 6, 19, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 87, 92407.97m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 37, new DateTime(2019, 1, 4, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 46, 38984.249m });
+                values: new object[] { 154, new DateTime(2018, 12, 11, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 43, 39103.837m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 7, new DateTime(2019, 3, 5, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 46, 46894.3299m });
+                values: new object[] { 85, new DateTime(2018, 10, 29, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 43, 96418.2157m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 165, new DateTime(2018, 12, 8, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 44, 78224.82m });
+                values: new object[] { 15, new DateTime(2018, 10, 17, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 43, 64791.3102m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 87, new DateTime(2018, 12, 30, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 11, 76304.686m });
+                values: new object[] { 161, new DateTime(2018, 11, 16, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 10, 35785.861m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 19, new DateTime(2019, 7, 7, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 12, 30075.798m });
+                values: new object[] { 189, new DateTime(2018, 12, 4, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 10, 53636.2274m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 21, new DateTime(2019, 2, 12, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 12, 98102.3681m });
+                values: new object[] { 76, new DateTime(2019, 6, 13, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 11, 63965.315m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 51, new DateTime(2018, 10, 19, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 12, 83906.461m });
+                values: new object[] { 77, new DateTime(2018, 9, 28, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 11, 96633.2628m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 110, new DateTime(2018, 12, 28, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 12, 79844.3337m });
+                values: new object[] { 90, new DateTime(2019, 6, 16, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 11, 32377.3877m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 112, new DateTime(2019, 6, 6, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 12, 52358.3899m });
+                values: new object[] { 175, new DateTime(2019, 6, 8, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 11, 14437.3601m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 20, new DateTime(2019, 3, 20, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 13, 79412.1921m });
+                values: new object[] { 54, new DateTime(2019, 3, 18, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 12, 26238.2807m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 55, new DateTime(2018, 10, 4, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 13, 4050.1438m });
+                values: new object[] { 107, new DateTime(2019, 1, 7, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 12, 81899.1234m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 59, new DateTime(2018, 12, 5, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 13, 11414.3906m });
+                values: new object[] { 159, new DateTime(2018, 11, 6, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 12, 39343.1729m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 98, new DateTime(2019, 6, 28, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 14, 10584.1710m });
+                values: new object[] { 33, new DateTime(2019, 4, 27, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 13, 98635.1869m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 133, new DateTime(2018, 10, 10, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 14, 41415.3241m });
+                values: new object[] { 106, new DateTime(2019, 6, 18, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 13, 56904.3891m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 144, new DateTime(2018, 11, 18, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 14, 77479.2974m });
+                values: new object[] { 200, new DateTime(2019, 6, 17, 0, 58, 51, 676, DateTimeKind.Local).AddTicks(3111), 13, 22885.3080m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 183, new DateTime(2018, 9, 16, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 14, 94715.1559m });
+                values: new object[] { 38, new DateTime(2019, 2, 3, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 15, 53900.2936m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 29, new DateTime(2019, 1, 27, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 15, 33957.2533m });
+                values: new object[] { 16, new DateTime(2019, 4, 19, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 17, 7863.1826m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 90, new DateTime(2019, 1, 10, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 15, 78283.868m });
+                values: new object[] { 32, new DateTime(2018, 11, 11, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 17, 97185.1280m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 93, new DateTime(2019, 6, 4, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 15, 78094.1088m });
+                values: new object[] { 111, new DateTime(2019, 4, 16, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 18, 84220.1385m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 174, new DateTime(2018, 12, 27, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 15, 77844.123m });
+                values: new object[] { 17, new DateTime(2019, 3, 21, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 20, 51071.1613m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 180, new DateTime(2018, 9, 18, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 15, 5499.523m });
+                values: new object[] { 40, new DateTime(2019, 5, 10, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 20, 65282.3987m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 44, new DateTime(2019, 4, 19, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 17, 53162.159m });
+                values: new object[] { 121, new DateTime(2019, 3, 31, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 20, 74258.1352m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 108, new DateTime(2018, 10, 25, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 17, 77116.3057m });
+                values: new object[] { 130, new DateTime(2018, 10, 24, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 20, 75555.3452m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 121, new DateTime(2018, 10, 6, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 17, 5409.3196m });
+                values: new object[] { 123, new DateTime(2018, 11, 30, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 21, 93304.2004m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 103, new DateTime(2018, 9, 21, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 10, 32525.3527m });
+                values: new object[] { 114, new DateTime(2019, 6, 9, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 10, 10582.833m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 26, new DateTime(2019, 2, 21, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 18, 63655.621m });
+                values: new object[] { 168, new DateTime(2019, 4, 16, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 21, 10996.1600m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 99, new DateTime(2019, 5, 9, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 10, 82636.1680m });
+                values: new object[] { 164, new DateTime(2019, 2, 14, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 9, 66519.2009m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 157, new DateTime(2019, 4, 17, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 9, 94516.2765m });
+                values: new object[] { 188, new DateTime(2019, 3, 17, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 8, 95052.374m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 198, new DateTime(2019, 2, 13, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 1, 72156.1254m });
+                values: new object[] { 56, new DateTime(2019, 4, 27, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 1, 54026.2968m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 17, new DateTime(2018, 11, 14, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 2, 33585.3307m });
+                values: new object[] { 155, new DateTime(2018, 9, 26, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 1, 15226.449m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 58, new DateTime(2018, 11, 16, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 2, 73178.2470m });
+                values: new object[] { 5, new DateTime(2019, 5, 11, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 2, 9574.259m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 78, new DateTime(2019, 6, 3, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 2, 70578.92m });
+                values: new object[] { 96, new DateTime(2019, 6, 3, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 2, 47393.1014m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 125, new DateTime(2018, 9, 30, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 2, 6824.1365m });
+                values: new object[] { 157, new DateTime(2019, 3, 16, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 2, 98404.765m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 130, new DateTime(2019, 3, 28, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 2, 66231.1274m });
+                values: new object[] { 53, new DateTime(2018, 11, 5, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 3, 17532.1702m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 56, new DateTime(2018, 10, 5, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 3, 55864.589m });
+                values: new object[] { 83, new DateTime(2019, 3, 20, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 3, 22039.832m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 142, new DateTime(2018, 11, 20, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 3, 85538.2898m });
+                values: new object[] { 172, new DateTime(2019, 2, 18, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 3, 67904.545m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 196, new DateTime(2018, 12, 9, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 3, 76894.2154m });
+                values: new object[] { 197, new DateTime(2019, 7, 5, 0, 58, 51, 676, DateTimeKind.Local).AddTicks(3111), 3, 30204.510m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 197, new DateTime(2019, 2, 2, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 3, 85119.877m });
+                values: new object[] { 119, new DateTime(2019, 1, 4, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 4, 48371.350m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 30, new DateTime(2019, 3, 9, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 4, 1919.2669m });
+                values: new object[] { 44, new DateTime(2018, 11, 29, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 5, 12651.1215m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 43, new DateTime(2018, 11, 10, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 5, 24986.2783m });
+                values: new object[] { 79, new DateTime(2019, 7, 3, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 6, 67888.571m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 141, new DateTime(2019, 2, 27, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 5, 75102.3205m });
+                values: new object[] { 138, new DateTime(2019, 5, 16, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 6, 94251.2015m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 126, new DateTime(2018, 12, 17, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 6, 79310.299m });
+                values: new object[] { 12, new DateTime(2019, 3, 15, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 7, 81017.2923m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 60, new DateTime(2019, 2, 22, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 7, 88821.1725m });
+                values: new object[] { 22, new DateTime(2018, 11, 4, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 7, 20297.539m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 85, new DateTime(2019, 2, 3, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 8, 2782.3646m });
+                values: new object[] { 24, new DateTime(2018, 12, 21, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 7, 92630.1322m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 132, new DateTime(2019, 6, 26, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 8, 74825.226m });
+                values: new object[] { 66, new DateTime(2019, 4, 6, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 7, 61403.1328m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 163, new DateTime(2019, 4, 29, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 8, 89418.973m });
+                values: new object[] { 92, new DateTime(2018, 10, 12, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 7, 90858.671m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 177, new DateTime(2018, 12, 3, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 8, 53474.15m });
+                values: new object[] { 98, new DateTime(2019, 3, 23, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 7, 95027.956m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 115, new DateTime(2019, 2, 12, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 9, 6587.294m });
+                values: new object[] { 60, new DateTime(2018, 9, 20, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 8, 91653.1965m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 140, new DateTime(2019, 1, 18, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 9, 12865.3883m });
+                values: new object[] { 181, new DateTime(2019, 2, 16, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 8, 49161.3555m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 14, new DateTime(2018, 11, 27, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 10, 45785.154m });
+                values: new object[] { 163, new DateTime(2019, 7, 12, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 9, 74739.457m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 138, new DateTime(2019, 6, 23, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 18, 78039.2190m });
+                values: new object[] { 176, new DateTime(2019, 4, 11, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 21, 76495.3467m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 79, new DateTime(2019, 5, 3, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 19, 72959.887m });
+                values: new object[] { 194, new DateTime(2018, 11, 9, 0, 58, 51, 676, DateTimeKind.Local).AddTicks(3111), 21, 20384.247m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 152, new DateTime(2019, 3, 21, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 19, 21080.3796m });
+                values: new object[] { 65, new DateTime(2019, 5, 16, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 22, 91542.3470m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 92, new DateTime(2018, 11, 4, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 34, 86802.1568m });
+                values: new object[] { 84, new DateTime(2019, 6, 7, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 31, 21559.489m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 176, new DateTime(2019, 5, 27, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 34, 32077.108m });
+                values: new object[] { 124, new DateTime(2019, 1, 3, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 32, 43461.2060m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 158, new DateTime(2019, 3, 20, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 35, 56763.3922m });
+                values: new object[] { 136, new DateTime(2019, 4, 1, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 32, 8492.3989m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 164, new DateTime(2019, 1, 3, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 35, 52756.3746m });
+                values: new object[] { 190, new DateTime(2018, 11, 17, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 32, 64399.3087m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 16, new DateTime(2019, 5, 26, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 36, 85133.623m });
+                values: new object[] { 39, new DateTime(2018, 12, 13, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 33, 21508.2700m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 162, new DateTime(2018, 12, 4, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 36, 54073.634m });
+                values: new object[] { 131, new DateTime(2019, 4, 21, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 33, 60414.2336m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 187, new DateTime(2019, 4, 29, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 36, 67351.156m });
+                values: new object[] { 51, new DateTime(2018, 10, 8, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 34, 35214.1540m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 40, new DateTime(2019, 5, 14, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 37, 76156.3660m });
+                values: new object[] { 81, new DateTime(2019, 2, 14, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 34, 2752.3974m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 47, new DateTime(2019, 2, 11, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 37, 18050.507m });
+                values: new object[] { 99, new DateTime(2019, 1, 27, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 34, 63828.3343m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 117, new DateTime(2019, 1, 5, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 37, 69909.1779m });
+                values: new object[] { 184, new DateTime(2019, 1, 29, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 34, 88921.2226m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 131, new DateTime(2018, 10, 6, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 37, 78204.1177m });
+                values: new object[] { 4, new DateTime(2019, 5, 26, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 35, 73337.2479m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 11, new DateTime(2018, 10, 11, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 40, 13125.1940m });
+                values: new object[] { 3, new DateTime(2018, 12, 8, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 36, 69457.1421m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 52, new DateTime(2019, 3, 25, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 40, 30233.3027m });
+                values: new object[] { 70, new DateTime(2019, 3, 20, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 36, 75521.3911m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 181, new DateTime(2019, 3, 8, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 40, 1564.1814m });
+                values: new object[] { 133, new DateTime(2019, 6, 9, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 36, 7560.3326m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 25, new DateTime(2019, 4, 19, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 41, 96605.3354m });
+                values: new object[] { 196, new DateTime(2018, 10, 19, 0, 58, 51, 676, DateTimeKind.Local).AddTicks(3111), 36, 62423.909m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 69, new DateTime(2019, 5, 9, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 41, 91640.1263m });
+                values: new object[] { 55, new DateTime(2019, 6, 14, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 39, 66776.3337m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 96, new DateTime(2019, 5, 4, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 41, 9056.2778m });
+                values: new object[] { 142, new DateTime(2019, 7, 3, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 39, 19073.2427m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 34, new DateTime(2019, 3, 20, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 42, 85584.2568m });
+                values: new object[] { 41, new DateTime(2019, 5, 14, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 41, 53805.2118m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 42, new DateTime(2019, 5, 8, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 43, 7260.3944m });
+                values: new object[] { 128, new DateTime(2018, 11, 18, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 42, 61637.3386m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 65, new DateTime(2019, 6, 21, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 43, 41842.1844m });
+                values: new object[] { 191, new DateTime(2018, 10, 4, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 42, 12766.2097m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 84, new DateTime(2018, 10, 18, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 44, 1813.3379m });
+                values: new object[] { 198, new DateTime(2018, 9, 21, 0, 58, 51, 676, DateTimeKind.Local).AddTicks(3111), 42, 21718.3912m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 123, new DateTime(2018, 10, 19, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 33, 84620.3400m });
+                values: new object[] { 67, new DateTime(2019, 5, 31, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 31, 52656.168m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 120, new DateTime(2019, 5, 20, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 33, 6674.3596m });
+                values: new object[] { 49, new DateTime(2019, 1, 22, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 31, 12009.3531m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 97, new DateTime(2019, 3, 28, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 33, 69852.3357m });
+                values: new object[] { 156, new DateTime(2018, 10, 19, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 30, 97135.1907m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 35, new DateTime(2019, 1, 30, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 33, 93676.837m });
+                values: new object[] { 129, new DateTime(2018, 10, 7, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 30, 40781.2052m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 185, new DateTime(2018, 11, 29, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 19, 2915.312m });
+                values: new object[] { 162, new DateTime(2018, 11, 7, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 22, 70501.2409m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 190, new DateTime(2018, 9, 21, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 19, 46136.989m });
+                values: new object[] { 183, new DateTime(2019, 1, 25, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 22, 90752.753m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 28, new DateTime(2018, 10, 28, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 20, 57048.126m });
+                values: new object[] { 27, new DateTime(2018, 11, 9, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 23, 33014.827m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 75, new DateTime(2019, 1, 19, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 20, 39500.105m });
+                values: new object[] { 102, new DateTime(2019, 5, 28, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 23, 97513.3283m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 109, new DateTime(2018, 9, 20, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 21, 63453.3005m });
+                values: new object[] { 109, new DateTime(2019, 3, 22, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 23, 8493.2473m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 135, new DateTime(2019, 2, 9, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 21, 8747.476m });
+                values: new object[] { 167, new DateTime(2018, 12, 19, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 23, 58764.1710m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 122, new DateTime(2018, 10, 26, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 22, 36764.2697m });
+                values: new object[] { 13, new DateTime(2019, 2, 23, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 24, 86248.1857m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 139, new DateTime(2018, 11, 29, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 22, 15260.3396m });
+                values: new object[] { 101, new DateTime(2019, 5, 23, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 24, 19296.3030m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 151, new DateTime(2019, 1, 12, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 23, 30874.1045m });
+                values: new object[] { 115, new DateTime(2019, 2, 16, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 24, 98844.79m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 194, new DateTime(2019, 4, 11, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 24, 30687.2340m });
+                values: new object[] { 30, new DateTime(2018, 11, 19, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 25, 60558.920m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 155, new DateTime(2019, 2, 20, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 100, 17513.1775m });
+                values: new object[] { 112, new DateTime(2018, 11, 15, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 100, 34983.1848m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 41, new DateTime(2018, 11, 14, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 27, 93552.875m });
+                values: new object[] { 139, new DateTime(2018, 11, 25, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 25, 87532.3723m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 22, new DateTime(2018, 10, 12, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 28, 1216.760m });
+                values: new object[] { 47, new DateTime(2018, 12, 10, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 26, 54815.209m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 72, new DateTime(2018, 10, 2, 1, 24, 53, 681, DateTimeKind.Local).AddTicks(7967), 28, 99944.3586m });
+                values: new object[] { 151, new DateTime(2019, 2, 27, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 26, 45433.1923m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 150, new DateTime(2018, 10, 15, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 28, 26026.143m });
+                values: new object[] { 127, new DateTime(2019, 4, 19, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 27, 26373.379m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 111, new DateTime(2018, 11, 3, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 29, 34652.2081m });
+                values: new object[] { 36, new DateTime(2019, 2, 10, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 28, 54204.3785m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 134, new DateTime(2018, 11, 6, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 29, 54135.3976m });
+                values: new object[] { 149, new DateTime(2019, 5, 7, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 28, 29908.369m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 193, new DateTime(2019, 6, 2, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 29, 69987.1879m });
+                values: new object[] { 173, new DateTime(2018, 9, 18, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 28, 95842.3901m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 23, new DateTime(2019, 3, 11, 1, 24, 53, 680, DateTimeKind.Local).AddTicks(7966), 31, 29499.2779m });
+                values: new object[] { 178, new DateTime(2018, 10, 5, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 28, 74360.955m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 160, new DateTime(2019, 2, 28, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 31, 77622.1026m });
+                values: new object[] { 147, new DateTime(2018, 10, 14, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 29, 33208.506m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 168, new DateTime(2018, 12, 3, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 31, 66220.1958m });
+                values: new object[] { 11, new DateTime(2019, 5, 31, 0, 58, 51, 673, DateTimeKind.Local).AddTicks(3110), 30, 82608.1672m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 80, new DateTime(2018, 10, 14, 1, 24, 53, 682, DateTimeKind.Local).AddTicks(7968), 32, 61729.1496m });
+                values: new object[] { 68, new DateTime(2019, 1, 26, 0, 58, 51, 674, DateTimeKind.Local).AddTicks(3110), 30, 64462.611m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 186, new DateTime(2019, 1, 26, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 27, 38988.2131m });
+                values: new object[] { 177, new DateTime(2018, 11, 19, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 25, 57922.2102m });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "CustomerId", "Price" },
-                values: new object[] { 188, new DateTime(2018, 10, 21, 1, 24, 53, 683, DateTimeKind.Local).AddTicks(7968), 100, 48917.3932m });
+                values: new object[] { 144, new DateTime(2018, 11, 12, 0, 58, 51, 675, DateTimeKind.Local).AddTicks(3111), 100, 47372.3325m });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Orders_CustomerId",

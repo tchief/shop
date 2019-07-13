@@ -19,8 +19,8 @@ namespace Shop.Web.Controllers
             => Ok(await _repository.GetOrdersAsync(customerId));
 
         [HttpGet("{id:int}", Name = "GetOrder")]
-        public async Task<ActionResult<Order>> GetOrder(int id)
-            => Ok(await _repository.GetOrderAsync(id));
+        public async Task<ActionResult<Order>> GetOrder(int customerId, int id)
+            => Ok(await _repository.GetOrderAsync(customerId, id));
 
         [HttpPost]
         public async Task<ActionResult<Order>> AddOrder(int customerId, [FromBody] Order order)
