@@ -23,7 +23,7 @@ namespace Shop.Web.Controllers
             => Ok(await _repository.GetOrderAsync(id));
 
         [HttpPost]
-        public async Task<IActionResult> AddOrder(int customerId, [FromBody] Order order)
+        public async Task<ActionResult<Order>> AddOrder(int customerId, [FromBody] Order order)
         {
             var result = await _repository.AddOrderAsync(customerId, order);
             return CreatedAtRoute("GetOrder", new { result.Id }, result);
