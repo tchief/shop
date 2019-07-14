@@ -43,7 +43,7 @@ namespace Shop.Tests.Persistence
                 .Build();
 
             var order = Builder<Order>.CreateNew()
-                .With(o => o.Id = id++)
+                .With(o => o.Id = 1234)
                 .With(o => o.Price = priceGenerator.Next(0m, 99999.99m))
                 .With(o => o.CreatedDate = DateTime.Now.AddDays(-daysGenerator.Next(1, 300)))
                 .With(o => o.CustomerId = 1000)

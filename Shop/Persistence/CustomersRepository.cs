@@ -4,64 +4,76 @@ using System.Threading.Tasks;
 using Shop.Domain;
 using Shop.Domain.Entities;
 using System.Linq;
+using AutoMapper;
+using Shop.Application.Dto;
 
 namespace Shop.Persistence
 {
     public class CustomersRepository: ICustomersRepository
     {
         private readonly CustomersDbContext _context;
-        public CustomersRepository(CustomersDbContext context) => _context = context;
+        private readonly IMapper _mapper;
 
-        public async Task<IEnumerable<Customer>> GetCustomersAsync(bool includeOrders = false) 
-            => await _context.Customers.IncludeIf(c => c.Orders, includeOrders).ToArrayAsync();
+        public CustomersRepository(CustomersDbContext context, IMapper mapper)
+        {
+            _context = context;
+            _mapper = mapper;
+        }
 
-        public async Task<Customer> GetCustomerAsync(int id, bool includeOrders = false) 
-            => await _context.Customers
+        public async Task<IEnumerable<CustomerDto>> GetCustomersAsync(bool includeOrders = false)
+        {
+            return await _context.Customers.IncludeIf(c => c.Orders, includeOrders)
+                .Select(o => _mapper.Map<CustomerDto>(o))
+                .ToArrayAsync();
+        }
+
+        public async Task<CustomerDto> GetCustomerAsync(int id, bool includeOrders = false)
+        {
+            var result = await _context.Customers
                 .IncludeIf(c => c.Orders, includeOrders)
                 .SingleOrDefaultAsync(c => c.Id == id);
+            return _mapper.Map<CustomerDto>(result);
+        }
 
-        public async Task<IEnumerable<Order>> GetOrdersAsync(int customerId)
+        public async Task<IEnumerable<OrderDto>> GetOrdersAsync(int customerId)
         {
             var customer = await GetCustomerAsync(customerId);
             if (customer == null) return null;
-            return await _context.Orders.Where(o => o.CustomerId == customerId).ToArrayAsync();
+            return await _context.Orders.Where(o => o.CustomerId == customerId)
+                .Select(o => _mapper.Map<OrderDto>(o))
+                .ToArrayAsync();
         }
 
-        public async Task<Order> GetOrderAsync(int customerId, int orderId)
-            => await _context.Orders.SingleOrDefaultAsync(o => o.CustomerId == customerId && o.Id == orderId);
-
-        public async Task<Customer> AddCustomerAsync(Customer customer)
+        public async Task<OrderDto> GetOrderAsync(int customerId, int orderId)
         {
-            var entity = new Customer
-            {
-                Name = customer.Name,
-                Email = customer.Email
-            };
+            var result = await _context.Orders.SingleOrDefaultAsync(o => o.CustomerId == customerId && o.Id == orderId);
+            return _mapper.Map<OrderDto>(result);
+        }
+
+        public async Task<CustomerDto> AddCustomerAsync(CustomerDto customer)
+        {
+            var entity = _mapper.Map<Customer>(customer);
 
             _context.Customers.Add(entity);
-
             await _context.SaveChangesAsync();
 
-            return entity;
+            customer.Id = entity.Id;
+            return customer;
         }
 
-        public async Task<Order> AddOrderAsync(int customerId, Order order)
+        public async Task<OrderDto> AddOrderAsync(int customerId, OrderDto order)
         {
             var customer = await _context.Customers.SingleOrDefaultAsync(c => c.Id == customerId); 
             if (customer == null) throw new CustomerNotFoundException(customerId);
 
-            var entity = new Order
-            {
-                Price = order.Price,
-                CreatedDate = order.CreatedDate,
-                CustomerId = customerId
-            };
+            var entity = _mapper.Map<Order>(order);
+            entity.CustomerId = customerId;
 
             _context.Orders.Add(entity);
-
             await _context.SaveChangesAsync();
 
-            return entity;
+            order.Id = entity.Id;
+            return order;
         }
     }
 }

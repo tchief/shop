@@ -1,4 +1,6 @@
-﻿using Microsoft.OpenApi.Models;
+﻿using System.IO;
+using AutoMapper;
+using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -32,7 +34,13 @@ namespace Shop
                         options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
                     });
             
-            services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo { Title = "Shop API", Version = "v1" }); });
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Shop API", Version = "v1" });
+                c.IncludeXmlComments(Path.Combine(System.AppContext.BaseDirectory, "Shop.xml"));
+            });
+            
+            services.AddAutoMapper(typeof(Startup));
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

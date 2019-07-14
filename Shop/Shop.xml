@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Shop</name>
+    </assembly>
+    <members>
+        <member name="T:Shop.Application.Dto.CustomerDto">
+            <summary>
+            Customer in our system.
+            </summary>
+        </member>
+        <member name="P:Shop.Application.Dto.CustomerDto.Id">
+            <summary>
+            Unique identifier of the customer.
+            </summary>
+        </member>
+        <member name="P:Shop.Application.Dto.CustomerDto.Name">
+            <summary>
+            Full name of the customer.
+            </summary>
+            <example>Elon Musk</example>
+        </member>
+        <member name="P:Shop.Application.Dto.CustomerDto.Email">
+            <summary>
+            Customer's email.
+            </summary>
+            <example>elon.musk@mars.com</example>
+        </member>
+        <member name="P:Shop.Application.Dto.CustomerDto.Orders">
+            <summary>
+            Orders customer has placed.
+            </summary>
+        </member>
+        <member name="T:Shop.Application.Dto.OrderDto">
+            <summary>
+            Order someone placed in our system.
+            </summary>
+        </member>
+        <member name="P:Shop.Application.Dto.OrderDto.Id">
+            <summary>
+            Unique identifier of the order.
+            </summary>
+        </member>
+        <member name="P:Shop.Application.Dto.OrderDto.Price">
+            <summary>
+            Price for the order.
+            </summary>
+            <example>450.45</example>
+        </member>
+        <member name="P:Shop.Application.Dto.OrderDto.CreatedDate">
+            <summary>
+            Date order was made.
+            </summary>
+            <example>2019-02-13</example>
+        </member>
+        <member name="M:Shop.Web.Controllers.CustomersController.GetCustomers(System.Boolean)">
+            <summary>
+            Retrieves all customers.
+            </summary>
+            <param name="includeOrders">Set <value>true</value> to include orders in results.</param>
+            <returns>All the customers.</returns>
+        </member>
+        <member name="M:Shop.Web.Controllers.CustomersController.GetCustomer(System.Int32,System.Boolean)">
+            <summary>
+            Retrieves customer by id.
+            </summary>
+            <param name="id">Id of the customer.</param>
+            <param name="includeOrders">Set <value>true</value> to include orders in results.</param>
+            <returns>Customer details.</returns>
+        </member>
+        <member name="M:Shop.Web.Controllers.CustomersController.AddCustomer(Shop.Application.Dto.CustomerDto)">
+            <summary>
+            Register new customer.
+            </summary>
+            <param name="customer">Customer to register.</param>
+            <returns>Registered customer.</returns>
+        </member>
+        <member name="M:Shop.Web.Controllers.OrdersController.GetOrders(System.Int32)">
+            <summary>
+            Retrieves all orders for the customer.
+            </summary>
+            <param name="customerId">Id of customer.</param>
+            <returns>All available orders for customer.</returns>
+        </member>
+        <member name="M:Shop.Web.Controllers.OrdersController.GetOrder(System.Int32,System.Int32)">
+            <summary>
+            Retrieves specific order for the customer.
+            </summary>
+            <param name="customerId">Id of customer.</param>
+            <param name="id">Id of the order.</param>
+            <returns>Specific order for the customer.</returns>
+        </member>
+        <member name="M:Shop.Web.Controllers.OrdersController.AddOrder(System.Int32,Shop.Application.Dto.OrderDto)">
+            <summary>
+            Places a new order.
+            </summary>
+        </member>
+    </members>
+</doc>

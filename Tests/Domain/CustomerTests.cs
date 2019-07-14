@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using FluentAssertions;
+using Shop.Application.Dto;
 using Shop.Domain.Entities;
 using Xunit;
 
@@ -12,7 +13,7 @@ namespace Shop.Tests.Domain
         [Fact]
         public void Validate_AllPropertiesValid_ErrorsListEmpty()
         {
-            var customer = new Customer() { Id = 1, Name = "Elon Musk", Email = "elon.musk@mars.com" };
+            var customer = new CustomerDto() { Id = 1, Name = "Elon Musk", Email = "elon.musk@mars.com" };
             var result = new List<ValidationResult>();
 
             var isValid = Validator.TryValidateObject(customer, new ValidationContext(customer), result, true);
@@ -24,7 +25,7 @@ namespace Shop.Tests.Domain
         [Fact]
         public void Validate_NameMissing_ErrorsListContainsName()
         {
-            var customer = new Customer() { Id = 1, Email = "elon.musk@mars.com" };
+            var customer = new CustomerDto() { Id = 1, Email = "elon.musk@mars.com" };
             var result = new List<ValidationResult>();
 
             var isValid = Validator.TryValidateObject(customer, new ValidationContext(customer), result, true);
@@ -37,7 +38,7 @@ namespace Shop.Tests.Domain
         [Fact]
         public void Validate_EmailMissing_ErrorsListContainsEmail()
         {
-            var customer = new Customer() { Id = 1, Name = "Elon Musk" };
+            var customer = new CustomerDto() { Id = 1, Name = "Elon Musk" };
             var result = new List<ValidationResult>();
 
             var isValid = Validator.TryValidateObject(customer, new ValidationContext(customer), result, true);
@@ -50,7 +51,7 @@ namespace Shop.Tests.Domain
         [Fact]
         public void Validate_EmailInvalid_ErrorsListContainsEmail()
         {
-            var customer = new Customer() { Id = 1, Name = "Elon Musk", Email = "elon.musk_goes_to_mars.com" };
+            var customer = new CustomerDto() { Id = 1, Name = "Elon Musk", Email = "elon.musk_goes_to_mars.com" };
             var result = new List<ValidationResult>();
 
             var isValid = Validator.TryValidateObject(customer, new ValidationContext(customer), result, true);

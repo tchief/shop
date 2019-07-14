@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
+using Shop.Application.Dto;
 using Shop.Domain.Entities;
 using Shop.Persistence;
 using Xunit;
@@ -12,8 +14,16 @@ namespace Shop.Tests.Persistence
     [Collection("DbContextFixtureCollection")]
     public class CustomersRepositoryTests : IClassFixture<DbContextFixture>
     {
+        private readonly IMapper _mapper;
         private readonly DbContextOptions<CustomersDbContext> _options;
-        public CustomersRepositoryTests(DbContextFixture fixture) => _options = fixture.Options;
+        public CustomersRepositoryTests(DbContextFixture fixture)
+        {
+            _options = fixture.Options;
+
+            var profile = new EntitiesToDtoMappingsProfile();
+            var configuration = new MapperConfiguration(cfg => cfg.AddProfile(profile));
+            _mapper = new Mapper(configuration);
+        }
 
         // TODO: Can we eliminate using, via base class or InMemory or Collection or whatever.
 
@@ -22,7 +32,7 @@ namespace Shop.Tests.Persistence
         {
             using (var context = new CustomersDbContext(_options))
             {
-                var repository = new CustomersRepository(context);
+                var repository = new CustomersRepository(context, _mapper);
                 var result = (await repository.GetCustomersAsync()).ToList();
 
                 result.Should().NotBeEmpty();
@@ -35,7 +45,7 @@ namespace Shop.Tests.Persistence
         {
             using (var context = new CustomersDbContext(_options))
             {
-                var repository = new CustomersRepository(context);
+                var repository = new CustomersRepository(context, _mapper);
                 var result = (await repository.GetCustomersAsync(true)).ToList();
 
                 result.Should().NotBeEmpty();
@@ -48,7 +58,7 @@ namespace Shop.Tests.Persistence
         {
             using (var context = new CustomersDbContext(_options))
             {
-                var repository = new CustomersRepository(context);
+                var repository = new CustomersRepository(context, _mapper);
                 var result = await repository.GetCustomerAsync(1);
 
                 result.Id.Should().Be(1);
@@ -61,7 +71,7 @@ namespace Shop.Tests.Persistence
         {
             using (var context = new CustomersDbContext(_options))
             {
-                var repository = new CustomersRepository(context);
+                var repository = new CustomersRepository(context, _mapper);
                 var result = await repository.GetCustomerAsync(999);
 
                 result.Should().BeNull();
@@ -73,7 +83,7 @@ namespace Shop.Tests.Persistence
         {
             using (var context = new CustomersDbContext(_options))
             {
-                var repository = new CustomersRepository(context);
+                var repository = new CustomersRepository(context, _mapper);
                 var result = await repository.GetCustomerAsync(1000, true);
 
                 result.Id.Should().Be(1000);
@@ -86,8 +96,8 @@ namespace Shop.Tests.Persistence
         {
             using (var context = new CustomersDbContext(_options))
             {
-                var customer = new Customer() {Name = "Elon Musk", Email = "elon.musk@mars.com"};
-                var repository = new CustomersRepository(context);
+                var customer = new CustomerDto() {Name = "Elon Musk", Email = "elon.musk@mars.com"};
+                var repository = new CustomersRepository(context, _mapper);
                 var result = await repository.AddCustomerAsync(customer);
 
                 result.Id.Should().BeGreaterThan(0);
@@ -100,9 +110,9 @@ namespace Shop.Tests.Persistence
         {
             using (var context = new CustomersDbContext(_options))
             {
-                var customer = new Customer() {Email = "elon.musk@mars.com"};
-                var repository = new CustomersRepository(context);
-                Func<Task<Customer>> result = async () => await repository.AddCustomerAsync(customer);
+                var customer = new CustomerDto() {Email = "elon.musk@mars.com"};
+                var repository = new CustomersRepository(context, _mapper);
+                Func<Task<CustomerDto>> result = async () => await repository.AddCustomerAsync(customer);
 
                 await result.Should().ThrowAsync<Exception>();
             }

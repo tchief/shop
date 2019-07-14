@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
+using AutoMapper;
 using FluentAssertions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -9,7 +10,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Routing;
 using NSubstitute;
-using Shop.Controllers;
+using Shop.Application.Dto;
 using Shop.Domain;
 using Shop.Domain.Entities;
 using Shop.Web.Controllers;
@@ -24,7 +25,7 @@ namespace Shop.Tests.Web
         public async Task GetCustomer_InvalidId_ReturnsNotFound()
         {
             var mockRepository = Substitute.For<ICustomersRepository>();
-            mockRepository.GetCustomerAsync(Arg.Any<int>()).Returns((Customer)null);
+            mockRepository.GetCustomerAsync(Arg.Any<int>()).Returns((CustomerDto)null);
             var controller = new CustomersController(mockRepository);
 
             var response = await controller.GetCustomer(1);
@@ -35,11 +36,12 @@ namespace Shop.Tests.Web
         [Fact]
         public async Task GetOrder_InvalidId_ReturnsNotFound()
         {
+            var mapper = Substitute.For<IMapper>();
             var mockRepository = Substitute.For<ICustomersRepository>();
-            mockRepository.GetOrderAsync(Arg.Any<int>()).Returns((Order)null);
+            mockRepository.GetOrderAsync(Arg.Any<int>(), Arg.Any<int>()).Returns((OrderDto)null);
             var controller = new OrdersController(mockRepository);
 
-            var response = await controller.GetOrder(1);
+            var response = await controller.GetOrder(1, 1);
 
             ActAndAssertForNotFoundResponse(response, controller);
         }
@@ -47,8 +49,9 @@ namespace Shop.Tests.Web
         [Fact]
         public async Task GetOrders_InvalidCustomerId_ReturnsNotFound()
         {
+            var mapper = Substitute.For<IMapper>();
             var mockRepository = Substitute.For<ICustomersRepository>();
-            mockRepository.GetOrdersAsync(Arg.Any<int>()).Returns((IEnumerable<Order>)null);
+            mockRepository.GetOrdersAsync(Arg.Any<int>()).Returns((IEnumerable<OrderDto>)null);
             var controller = new OrdersController(mockRepository);
 
             var response = await controller.GetOrders(1);
@@ -73,9 +76,8 @@ namespace Shop.Tests.Web
             // Act
             attribute.OnResultExecuting(executingContext);
 
-            var result = (NotFoundResult)executingContext.Result;
-            result.Should().NotBeNull();
-            result.Should().BeOfType<NotFoundResult>()
+            executingContext.Result.Should().NotBeNull();
+            executingContext.Result.Should().BeOfType<NotFoundResult>()
                 .Which.StatusCode.Should().Be((int)HttpStatusCode.NotFound);
         }
     }
