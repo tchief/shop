@@ -7,6 +7,8 @@
 	 If you'd like to run postman smoke tests or build coverage report install:  
 	 ```
 	 npm install -g newman  
+	 ```  
+	 ```
 	 dotnet tool install -g dotnet-reportgenerator-globaltool
 	 ```
   3. Launch the backend:  
