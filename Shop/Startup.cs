@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.IO;
 using AutoMapper;
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Builder;
@@ -15,6 +16,7 @@ using Shop.Web.Filters;
 
 namespace Shop
 {
+    [ExcludeFromCodeCoverage]
     public class Startup
     {
         public Startup(IConfiguration configuration) => Configuration = configuration;

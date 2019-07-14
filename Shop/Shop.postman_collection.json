@@ -65,7 +65,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "363f9719-be3d-4634-9e31-4f25d199af2c",
+										"id": "5802fb3f-981e-4210-acc3-cf543a17340d",
 										"type": "text/javascript",
 										"exec": [
 											"pm.test(\"Status code is 400\", function () {",
@@ -74,7 +74,8 @@
 											"",
 											"pm.test(\"Your test name\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.errors.name[0]).to.eql(\"The Name field is required.\");",
+											"    pm.expect(jsonData.errors.name).to.have.lengthOf(1);",
+											"    pm.expect(jsonData.errors.name[0]).to.include(\"The Name field is required.\");",
 											"});"
 										]
 									}
@@ -111,6 +112,26 @@
 						},
 						{
 							"name": "Create new customer with short name",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "e70d13f8-5e71-4864-92bb-a82a2562f8ad",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"Status code is 400\", function () {",
+											"    pm.response.to.have.status(400);",
+											"});",
+											"",
+											"pm.test(\"Your test name\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.errors.name).to.have.lengthOf(1);",
+											"    pm.expect(jsonData.errors.name[0]).to.include(\"Name must be a string with a minimum length of 3\");",
+											"});"
+										]
+									}
+								}
+							],
 							"request": {
 								"method": "POST",
 								"header": [
@@ -142,6 +163,29 @@
 						},
 						{
 							"name": "Create new customer with invalid email",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "79137455-ef72-49a2-9633-03a32b9dc3e3",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"Status code is 400\", function () {",
+											"    pm.response.to.have.status(400);",
+											"});",
+											"",
+											"pm.test(\"Your test name\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.errors.email).to.have.lengthOf(1);",
+											"    pm.expect(jsonData.errors.email[0]).to.include(\"The Email field is not a valid e-mail address.\");",
+											"});",
+											"",
+											"",
+											""
+										]
+									}
+								}
+							],
 							"request": {
 								"method": "POST",
 								"header": [
@@ -173,6 +217,26 @@
 						},
 						{
 							"name": "Create new customer with missing email",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "9d1d0c4c-721d-490b-ad69-9a7e8d9412f6",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"Status code is 400\", function () {",
+											"    pm.response.to.have.status(400);",
+											"});",
+											"",
+											"pm.test(\"Your test name\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.errors.email).to.have.lengthOf(1);",
+											"    pm.expect(jsonData.errors.email[0]).to.include(\"The Email field is required.\");",
+											"});"
+										]
+									}
+								}
+							],
 							"request": {
 								"method": "POST",
 								"header": [
@@ -211,6 +275,25 @@
 					"item": [
 						{
 							"name": "Get all customers",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "0b85bfaa-64c4-41f0-b91b-7dc96fa13c60",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"",
+											"pm.test(\"Your test name\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.length).to.be.above(10);",
+											"});"
+										]
+									}
+								}
+							],
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -239,7 +322,7 @@
 								"header": [],
 								"body": {},
 								"url": {
-									"raw": "https://localhost:5001/api/customers/",
+									"raw": "https://localhost:5001/api/customers/1",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -248,7 +331,7 @@
 									"path": [
 										"api",
 										"customers",
-										""
+										"1"
 									]
 								},
 								"description": null
@@ -257,6 +340,20 @@
 						},
 						{
 							"name": "Get customer by invalid id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "673f7ffc-71d1-474d-a4a0-d345e6e53fa9",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"Status code is 404\", function () {",
+											"    pm.response.to.have.status(404);",
+											"});"
+										]
+									}
+								}
+							],
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -280,6 +377,25 @@
 						},
 						{
 							"name": "Get customer with orders",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "02d8d94c-f5de-40c6-a2c0-0cd88e5e5ecb",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"",
+											"pm.test(\"Your test name\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.orders.length).to.be.above(1);",
+											"});"
+										]
+									}
+								}
+							],
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -384,6 +500,26 @@
 						},
 						{
 							"name": "Create new order with negative price",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "b0490eff-94ef-4fce-9a9c-a538e2170841",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"Status code is 400\", function () {",
+											"    pm.response.to.have.status(400);",
+											"});",
+											"",
+											"pm.test(\"Your test name\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.errors.price).to.have.lengthOf(1);",
+											"    pm.expect(jsonData.errors.price[0]).to.include(\"We support Price only from\");",
+											"});"
+										]
+									}
+								}
+							],
 							"request": {
 								"method": "POST",
 								"header": [
@@ -416,6 +552,26 @@
 						},
 						{
 							"name": "Create new order with old date",
+                            "event": [
+                                {
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "56e434d9-45cb-4611-b430-5637d246f358",
+                                        "type": "text/javascript",
+                                        "exec": [
+                                            "pm.test(\"Status code is 400\", function () {",
+                                            "    pm.response.to.have.status(400);",
+                                            "});",
+                                            "",
+                                            "pm.test(\"Your test name\", function () {",
+                                            "    var jsonData = pm.response.json();",
+                                            "    pm.expect(jsonData.errors.createdDate).to.have.lengthOf(1);",
+                                            "    pm.expect(jsonData.errors.createdDate[0]).to.include(\"support CreatedDate only from\");",
+                                            "});"
+                                        ]
+                                    }
+                                }
+                            ],
 							"request": {
 								"method": "POST",
 								"header": [
@@ -448,6 +604,26 @@
 						},
 						{
 							"name": "Create new order with missing price",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "91e968d7-7422-4547-9e28-07319ebfa71c",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"Status code is 400\", function () {",
+											"    pm.response.to.have.status(400);",
+											"});",
+											"",
+											"pm.test(\"Your test name\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.errors.price).to.have.lengthOf(1);",
+											"    pm.expect(jsonData.errors.price[0]).to.include(\"support Price only from\");",
+											"});"
+										]
+									}
+								}
+							],
 							"request": {
 								"method": "POST",
 								"header": [
@@ -519,6 +695,25 @@
 					"item": [
 						{
 							"name": "Get all orders for customer",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "54ab1a15-ad4e-493c-9bb2-513c17f90d61",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"",
+											"pm.test(\"Your test name\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.length).to.be.above(1);",
+											"});"
+										]
+									}
+								}
+							],
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -543,6 +738,20 @@
 						},
 						{
 							"name": "Get all orders for invalid customer",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "7234a582-72df-4bbb-9db1-62673469852a",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"Status code is 404\", function () {",
+											"    pm.response.to.have.status(404);",
+											"});"
+										]
+									}
+								}
+							],
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -567,12 +776,28 @@
 						},
 						{
 							"name": "Get order for customer by valid id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "e5e721fc-b827-4330-9569-bd17d81e0493",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"",
+											""
+										]
+									}
+								}
+							],
 							"request": {
 								"method": "GET",
 								"header": [],
 								"body": {},
 								"url": {
-									"raw": "https://localhost:5001/api/customers/3/orders/196",
+									"raw": "https://localhost:5001/api/customers/3/orders/53",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -583,7 +808,7 @@
 										"customers",
 										"3",
 										"orders",
-										"196"
+										"53"
 									]
 								},
 								"description": "SHOULD BE UPDATED"
@@ -592,12 +817,26 @@
 						},
 						{
 							"name": "Get order for customer by invalid id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "880b69a1-32f6-43f6-b035-7ca4e00781d3",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"Status code is 404\", function () {",
+											"    pm.response.to.have.status(404);",
+											"});"
+										]
+									}
+								}
+							],
 							"request": {
 								"method": "GET",
 								"header": [],
 								"body": {},
 								"url": {
-									"raw": "https://localhost:5001/api/customers/3/orders/196",
+									"raw": "https://localhost:5001/api/customers/3/orders/999",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -608,7 +847,7 @@
 										"customers",
 										"3",
 										"orders",
-										"196"
+										"999"
 									]
 								},
 								"description": null
@@ -617,6 +856,20 @@
 						},
 						{
 							"name": "Get order for customer by invalid customer id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "1a121c6f-cfd8-432c-b402-5af230328bde",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"Status code is 404\", function () {",
+											"    pm.response.to.have.status(404);",
+											"});"
+										]
+									}
+								}
+							],
 							"request": {
 								"method": "GET",
 								"header": [],

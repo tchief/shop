@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using FizzWare.NBuilder;
 using Shop.Domain.Entities;
 
 namespace Shop.Persistence
 {
+    [ExcludeFromCodeCoverage]
     internal static class RandomEntitiesGenerator
     {
         public static (IList<Customer>, IList<Order>) Seed()
