@@ -339,6 +339,117 @@
 							"response": []
 						},
 						{
+							"name": "Get customer by valid name",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "0e594f27-4c31-4e51-ab0a-a36771ad4764",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"",
+											"pm.test(\"Your test name\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.length).to.be.above(1);",
+											"});",
+											"",
+											"pm.test(\"Your test name\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData[0].orders).to.have.lengthOf(0);",
+											"});"
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "https://localhost:5001/api/customers?name=Co",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Co",
+											"equals": true
+										}
+									]
+								},
+								"description": null
+							},
+							"response": []
+						},
+						{
+							"name": "Get customer by valid name with orders",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "c95218c3-6588-42fd-a488-bde2fb535b07",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"",
+											"pm.test(\"Your test name\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.length).to.be.above(1);",
+											"});",
+											"",
+											"pm.test(\"Your test name\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData[0].orders.length).to.be.above(1);",
+											"});"
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "https://localhost:5001/api/customers?name=Co&includeOrders=true",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"customers"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Co",
+											"equals": true
+										},
+										{
+											"key": "includeOrders",
+											"value": "true",
+											"equals": true
+										}
+									]
+								},
+								"description": null
+							},
+							"response": []
+						},
+						{
 							"name": "Get customer by invalid id",
 							"event": [
 								{
@@ -552,26 +663,26 @@
 						},
 						{
 							"name": "Create new order with old date",
-                            "event": [
-                                {
-                                    "listen": "test",
-                                    "script": {
-                                        "id": "56e434d9-45cb-4611-b430-5637d246f358",
-                                        "type": "text/javascript",
-                                        "exec": [
-                                            "pm.test(\"Status code is 400\", function () {",
-                                            "    pm.response.to.have.status(400);",
-                                            "});",
-                                            "",
-                                            "pm.test(\"Your test name\", function () {",
-                                            "    var jsonData = pm.response.json();",
-                                            "    pm.expect(jsonData.errors.createdDate).to.have.lengthOf(1);",
-                                            "    pm.expect(jsonData.errors.createdDate[0]).to.include(\"support CreatedDate only from\");",
-                                            "});"
-                                        ]
-                                    }
-                                }
-                            ],
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "56e434d9-45cb-4611-b430-5637d246f358",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"Status code is 400\", function () {",
+											"    pm.response.to.have.status(400);",
+											"});",
+											"",
+											"pm.test(\"Your test name\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.errors.createdDate).to.have.lengthOf(1);",
+											"    pm.expect(jsonData.errors.createdDate[0]).to.include(\"support CreatedDate only from\");",
+											"});"
+										]
+									}
+								}
+							],
 							"request": {
 								"method": "POST",
 								"header": [
@@ -732,7 +843,7 @@
 										"orders"
 									]
 								},
-								"description": "SHOULD BE UPDATED"
+								"description": ""
 							},
 							"response": []
 						},
@@ -780,13 +891,12 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "e5e721fc-b827-4330-9569-bd17d81e0493",
+										"id": "360c7367-bf00-45f4-8b33-cb3426c0fb16",
 										"type": "text/javascript",
 										"exec": [
 											"pm.test(\"Status code is 200\", function () {",
 											"    pm.response.to.have.status(200);",
 											"});",
-											"",
 											""
 										]
 									}
@@ -797,7 +907,7 @@
 								"header": [],
 								"body": {},
 								"url": {
-									"raw": "https://localhost:5001/api/customers/3/orders/53",
+									"raw": "https://localhost:5001/api/customers/3/orders/132",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -808,10 +918,10 @@
 										"customers",
 										"3",
 										"orders",
-										"53"
+										"132"
 									]
 								},
-								"description": "SHOULD BE UPDATED"
+								"description": ""
 							},
 							"response": []
 						},

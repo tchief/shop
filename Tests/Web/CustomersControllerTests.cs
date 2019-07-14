@@ -151,5 +151,36 @@ namespace Shop.Tests.Web
 
             await mockRepository.Received().AddCustomerAsync(customer);
         }
+
+        [Fact]
+        public async Task DeleteCustomer_ValidParams_ReturnsNoContent()
+        {
+            var mockRepository = Substitute.For<ICustomersRepository>();
+
+            var controller = new CustomersController(mockRepository);
+
+            var response = await controller.DeleteCustomer(1);
+
+            response.Should().NotBeNull();
+            response.Should().BeOfType<NoContentResult>()
+                .Which.StatusCode.Should().Be((int)HttpStatusCode.NoContent);
+            
+            await mockRepository.Received().DeleteCustomerAsync(Arg.Any<int>());
+        }
+
+        [Fact]
+        public async Task DeleteCustomer_InvalidParams_ReturnsBadRequest()
+        {
+            var mockRepository = Substitute.For<ICustomersRepository>();
+            mockRepository.DeleteCustomerAsync(Arg.Any<int>()).Throws<ValidationException>();
+
+            var controller = new CustomersController(mockRepository);
+
+            Func<Task<ActionResult<CustomerDto>>> response = async () => await controller.DeleteCustomer(1);
+
+            await response.Should().ThrowAsync<ValidationException>();
+
+            await mockRepository.Received().DeleteCustomerAsync(Arg.Any<int>());
+        }
     }
 }

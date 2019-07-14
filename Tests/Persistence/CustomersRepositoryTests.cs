@@ -159,5 +159,60 @@ namespace Shop.Tests.Persistence
                 await result.Should().ThrowAsync<Exception>();
             }
         }
+
+        [Fact]
+        public async Task AddCustomer_ShortName_ThrowsException()
+        {
+            using (var context = new CustomersDbContext(_options))
+            {
+                var customer = new CustomerDto() { Name = "Ed", Email = "elon.musk@mars.com" };
+                var repository = new CustomersRepository(context, _mapper);
+                Func<Task<CustomerDto>> result = async () => await repository.AddCustomerAsync(customer);
+
+                await result.Should().ThrowAsync<Exception>();
+            }
+        }
+
+        [Fact]
+        public async Task AddCustomer_WrongEmail_ThrowsException()
+        {
+            using (var context = new CustomersDbContext(_options))
+            {
+                var customer = new CustomerDto() { Name = "Edward Stark", Email = "edward.stark.from.winterfell" };
+                var repository = new CustomersRepository(context, _mapper);
+                Func<Task<CustomerDto>> result = async () => await repository.AddCustomerAsync(customer);
+
+                await result.Should().ThrowAsync<Exception>();
+            }
+        }
+
+        [Fact]
+        public async Task DeleteCustomer_ValidParams_Deletes()
+        {
+            using (var context = new CustomersDbContext(_options))
+            {
+                var repository = new CustomersRepository(context, _mapper);
+
+                var customer = await repository.GetCustomerAsync(1111);
+                customer.Should().NotBeNull();
+                
+                await repository.DeleteCustomerAsync(1111);
+
+                customer = await repository.GetCustomerAsync(1111);
+                customer.Should().BeNull();
+            }
+        }
+
+        [Fact]
+        public async Task DeleteCustomer_InvalidParams_ThrowsException()
+        {
+            using (var context = new CustomersDbContext(_options))
+            {
+                var repository = new CustomersRepository(context, _mapper);
+                Func<Task> result = async () => await repository.DeleteCustomerAsync(99999);
+
+                await result.Should().ThrowAsync<Exception>();
+            }
+        }
     }
 }

@@ -83,6 +83,12 @@
             <param name="customer">Customer to register.</param>
             <returns>Registered customer.</returns>
         </member>
+        <member name="M:Shop.Web.Controllers.CustomersController.DeleteCustomer(System.Int32)">
+            <summary>
+            Deletes existing customer.
+            </summary>
+            <param name="id">Customer to delete.</param>
+        </member>
         <member name="M:Shop.Web.Controllers.OrdersController.GetOrders(System.Int32)">
             <summary>
             Retrieves all orders for the customer.

@@ -15,5 +15,7 @@ namespace Shop.Domain
 
         Task<CustomerDto> AddCustomerAsync(CustomerDto customer);
         Task<OrderDto> AddOrderAsync(int customerId, OrderDto order);
+
+        Task DeleteCustomerAsync(int id);
     }
 }

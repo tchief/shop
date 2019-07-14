@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using FluentAssertions;
-using Shop.Domain.Entities;
+using Shop.Application.Dto;
 using Xunit;
 
-namespace Shop.Tests.Domain
+namespace Shop.Tests.Application
 {
-    public class OrderTests
+    public class OrderDtoTests
     {
         [Fact]
         public void Validate_AllPropertiesValid_ErrorsListEmpty()
         {
-            var order = new Order() { Id = 1, Price = 234.45m, CreatedDate = DateTime.Today, CustomerId = 1 };
+            var order = new OrderDto() { Id = 1, Price = 234.45m, CreatedDate = DateTime.Today };
             var result = new List<ValidationResult>();
 
             var isValid = Validator.TryValidateObject(order, new ValidationContext(order), result, true);
@@ -25,7 +25,7 @@ namespace Shop.Tests.Domain
         [Fact]
         public void Validate_PriceMissing_ErrorsListContainsPrice()
         {
-            var order = new Order() { Id = 1, CreatedDate = DateTime.Today, CustomerId = 1 };
+            var order = new OrderDto() { Id = 1, CreatedDate = DateTime.Today };
             var result = new List<ValidationResult>();
 
             var isValid = Validator.TryValidateObject(order, new ValidationContext(order), result, true);
@@ -38,7 +38,7 @@ namespace Shop.Tests.Domain
         [Fact]
         public void Validate_PriceLessThanZero_ErrorsListContainsPrice()
         {
-            var order = new Order() { Id = 1, Price = -234.45m, CreatedDate = DateTime.Today, CustomerId = 1 };
+            var order = new OrderDto() { Id = 1, Price = -234.45m, CreatedDate = DateTime.Today };
             var result = new List<ValidationResult>();
 
             var isValid = Validator.TryValidateObject(order, new ValidationContext(order), result, true);
@@ -51,7 +51,7 @@ namespace Shop.Tests.Domain
         [Fact]
         public void Validate_CreatedDateMissing_ErrorsListContainsCreatedDate()
         {
-            var order = new Order() { Id = 1, Price = 234.45m, CustomerId = 1 };
+            var order = new OrderDto() { Id = 1, Price = 234.45m };
             var result = new List<ValidationResult>();
 
             var isValid = Validator.TryValidateObject(order, new ValidationContext(order), result, true);
@@ -64,7 +64,7 @@ namespace Shop.Tests.Domain
         [Fact]
         public void Validate_CreatedDateLessThan1900_ErrorsListContainsCreatedDate()
         {
-            var order = new Order() { Id = 1, Price = 234.45m, CreatedDate = new DateTime(1899, 1, 1), CustomerId = 1 };
+            var order = new OrderDto() { Id = 1, Price = 234.45m, CreatedDate = new DateTime(1899, 1, 1) };
             var result = new List<ValidationResult>();
 
             var isValid = Validator.TryValidateObject(order, new ValidationContext(order), result, true);

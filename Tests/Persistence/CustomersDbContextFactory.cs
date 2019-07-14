@@ -31,7 +31,9 @@ namespace Shop.Tests.Persistence
                 .Build();
 
             var customer = new Customer { Id = 1111, Name = "Elon Musk", Email = "elon.musk@mars.com" };
+            var customer2 = new Customer { Id = 2222, Name = "Bill Gates", Email = "bill.gates@microsoft.com" };
             customers.Add(customer);
+            customers.Add(customer2);
 
             var priceGenerator = new RandomGenerator();
             var daysGenerator = new RandomGenerator();

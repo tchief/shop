@@ -25,11 +25,14 @@
      ```
 	 reportgenerator "-reports:Tests\Coverage\coverage.opencover.xml" "-targetdir:Tests\Coverage\Report" && Tests\Coverage\Report\index.htm
 	 ```
-  6. Run smoke postman tests:
+  7. Run smoke postman tests:
 	 ```
 	 newman run Shop/Shop.postman_collection.json --insecure
 	 ```
-  7. Clean database after some tests - just remove Shop.db and run:
-     ```
-	 dotnet ef database update
-	 ```
+
+# Next possible steps
+1. Add/split column (first and last name, country).
+2. Introduce new business rule validation (max price depends on country, some countries does not supported).
+3. Move to CQRS.
+4. Generate client with NSwag.
+5. Set up CI/CD.

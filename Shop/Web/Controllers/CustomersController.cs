@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Shop.Application.Dto;
 using Shop.Domain;
@@ -55,6 +56,17 @@ namespace Shop.Web.Controllers
         {
             var result = await _repository.AddCustomerAsync(customer);
             return CreatedAtRoute("GetCustomer", new { result.Id }, result);
+        }
+
+        /// <summary>
+        /// Deletes existing customer.
+        /// </summary>
+        /// <param name="id">Customer to delete.</param>
+        [HttpDelete("{id:int:min(1)}")]
+        public async Task<ActionResult> DeleteCustomer(int id)
+        {
+            await _repository.DeleteCustomerAsync(id);
+            return NoContent();
         }
     }
 }

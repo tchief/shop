@@ -85,5 +85,15 @@ namespace Shop.Persistence
             order.Id = entity.Id;
             return order;
         }
+
+        public async Task DeleteCustomerAsync(int id)
+        {
+            var customer = await _context.Customers.SingleOrDefaultAsync(c => c.Id == id);
+            if (customer == null) throw new CustomerNotFoundException(id);
+
+            _context.Customers.Remove(customer);
+
+            await _context.SaveChangesAsync();
+        }
     }
 }

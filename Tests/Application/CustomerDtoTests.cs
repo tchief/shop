@@ -3,12 +3,11 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using FluentAssertions;
 using Shop.Application.Dto;
-using Shop.Domain.Entities;
 using Xunit;
 
-namespace Shop.Tests.Domain
+namespace Shop.Tests.Application
 {
-    public class CustomerTests
+    public class CustomerDtoTests
     {
         [Fact]
         public void Validate_AllPropertiesValid_ErrorsListEmpty()
