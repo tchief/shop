@@ -55,14 +55,14 @@
         </member>
         <member name="M:Shop.Web.Controllers.CustomersController.GetCustomers(System.Boolean)">
             <summary>
-            Retrieves all customers.
+            Retrieves all the customers.
             </summary>
             <param name="includeOrders">Set <value>true</value> to include orders in results.</param>
             <returns>All the customers.</returns>
         </member>
         <member name="M:Shop.Web.Controllers.CustomersController.GetCustomer(System.Int32,System.Boolean)">
             <summary>
-            Retrieves customer by id.
+            Retrieves a customer by id.
             </summary>
             <param name="id">Id of the customer.</param>
             <param name="includeOrders">Set <value>true</value> to include orders in results.</param>
@@ -70,7 +70,7 @@
         </member>
         <member name="M:Shop.Web.Controllers.CustomersController.AddCustomer(Shop.Application.Dto.CustomerDto)">
             <summary>
-            Register new customer.
+            Registers new customer.
             </summary>
             <param name="customer">Customer to register.</param>
             <returns>Registered customer.</returns>
