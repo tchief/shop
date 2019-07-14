@@ -92,6 +92,48 @@ namespace Shop.Tests.Persistence
         }
 
         [Fact]
+        public async Task GetCustomerByName_ExistingId_ReturnsCustomerWithoutOrders()
+        {
+            using (var context = new CustomersDbContext(_options))
+            {
+                var repository = new CustomersRepository(context, _mapper);
+                var result = (await repository.GetCustomersByNameAsync("Elon Musk")).ToArray();
+
+                result.Should().NotBeEmpty();
+                result[0].Id.Should().BeGreaterThan(0);
+                result[0].Name.Should().Be("Elon Musk");
+                result[0].Orders.Should().BeEmpty();
+            }
+        }
+
+        [Fact]
+        public async Task GetCustomerByName_NonExistingId_ReturnsNull()
+        {
+            using (var context = new CustomersDbContext(_options))
+            {
+                var repository = new CustomersRepository(context, _mapper);
+                var result = await repository.GetCustomersByNameAsync("Ned Stark");
+
+                result.Should().BeEmpty();
+            }
+        }
+
+        [Fact]
+        public async Task GetCustomerByName_ExistingIdWithIncludeOrders_ReturnsCustomerWithOrders()
+        {
+            using (var context = new CustomersDbContext(_options))
+            {
+                var repository = new CustomersRepository(context, _mapper);
+                var result = (await repository.GetCustomersByNameAsync("Elon Musk", true)).ToArray();
+
+                result.Should().NotBeEmpty();
+                result[0].Id.Should().BeGreaterThan(0);
+                result[0].Name.Should().Be("Elon Musk");
+                result[0].Orders.Should().NotBeEmpty();
+            }
+        }
+
+        [Fact]
         public async Task AddCustomer_ValidParams_CreatesAndReturns()
         {
             using (var context = new CustomersDbContext(_options))

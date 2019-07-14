@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Shop.Application.Dto;
 using Shop.Domain;
-using Shop.Web.Filters;
+using Shop.Web.Middleware;
 
 namespace Shop.Web.Controllers
 {
@@ -30,7 +30,7 @@ namespace Shop.Web.Controllers
         /// <param name="customerId">Id of customer.</param>
         /// <param name="id">Id of the order.</param>
         /// <returns>Specific order for the customer.</returns>
-        [HttpGet("{id:int}", Name = "GetOrder")]
+        [HttpGet("{id:int:min(1)}", Name = "GetOrder")]
         public async Task<ActionResult<OrderDto>> GetOrder(int customerId, int id)
             => Ok(await _repository.GetOrderAsync(customerId, id));
 

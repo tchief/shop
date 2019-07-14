@@ -12,7 +12,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Shop.Domain;
 using Shop.Persistence;
-using Shop.Web.Filters;
+using Shop.Web.Middleware;
 
 namespace Shop
 {

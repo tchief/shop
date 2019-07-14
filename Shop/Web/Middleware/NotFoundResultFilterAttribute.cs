@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace Shop.Web.Filters
+namespace Shop.Web.Middleware
 {
     public class NotFoundResultFilterAttribute : ResultFilterAttribute
     {

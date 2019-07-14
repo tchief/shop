@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Shop.Application.Dto;
 using Shop.Domain;
-using Shop.Web.Filters;
+using Shop.Web.Middleware;
 
 namespace Shop.Web.Controllers
 {
@@ -14,6 +14,17 @@ namespace Shop.Web.Controllers
     {
         private readonly ICustomersRepository _repository;
         public CustomersController(ICustomersRepository repository) => _repository = repository;
+
+        /// <summary>
+        /// Retrieves a customer by name.
+        /// </summary>
+        /// <param name="name">Name of the customer.</param>
+        /// <param name="includeOrders">Set <value>true</value> to include orders in results.</param>
+        /// <returns>Customer details.</returns>
+        [HttpGet]
+        //[ExactQueryParam("name")]
+        public async Task<ActionResult<IEnumerable<CustomerDto>>> GetCustomersByName([RequiredFromQuery]string name, bool includeOrders = false)
+            => Ok(await _repository.GetCustomersByNameAsync(name, includeOrders));
 
         /// <summary>
         /// Retrieves all the customers.
@@ -30,7 +41,7 @@ namespace Shop.Web.Controllers
         /// <param name="id">Id of the customer.</param>
         /// <param name="includeOrders">Set <value>true</value> to include orders in results.</param>
         /// <returns>Customer details.</returns>
-        [HttpGet("{id:int}", Name = "GetCustomer")]
+        [HttpGet("{id:int:min(1)}", Name = "GetCustomer")]
         public async Task<ActionResult<CustomerDto>> GetCustomer(int id, bool includeOrders = false)
             => Ok(await _repository.GetCustomerAsync(id, includeOrders));
 

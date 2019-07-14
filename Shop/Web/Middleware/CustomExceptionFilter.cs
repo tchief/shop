@@ -1,10 +1,10 @@
+using System;
+using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Shop.Domain;
-using System;
-using System.Net;
 
-namespace Shop.Web.Filters
+namespace Shop.Web.Middleware
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     public class CustomExceptionFilterAttribute : ExceptionFilterAttribute

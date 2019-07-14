@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Shop.Application.Dto;
-using Shop.Domain.Entities;
 
 namespace Shop.Domain
 {
@@ -9,6 +8,7 @@ namespace Shop.Domain
     {
         Task<IEnumerable<CustomerDto>> GetCustomersAsync(bool includeOrders = false);
         Task<CustomerDto> GetCustomerAsync(int id, bool includeOrders = false);
+        Task<IEnumerable<CustomerDto>> GetCustomersByNameAsync(string name, bool includeOrders = false);
 
         Task<IEnumerable<OrderDto>> GetOrdersAsync(int customerId);
         Task<OrderDto> GetOrderAsync(int customerId, int orderId);

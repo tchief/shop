@@ -33,7 +33,7 @@ namespace Shop.Tests.Persistence
             using (var context = new CustomersDbContext(_options))
             {
                 var repository = new CustomersRepository(context, _mapper);
-                var result = (await repository.GetOrdersAsync(4)).ToList();
+                var result = (await repository.GetOrdersAsync(1111)).ToList();
 
                 result.Should().NotBeEmpty();
                 result.First().Id.Should().BeGreaterThan(0);
@@ -58,7 +58,7 @@ namespace Shop.Tests.Persistence
             using (var context = new CustomersDbContext(_options))
             {
                 var repository = new CustomersRepository(context, _mapper);
-                var result = await repository.GetOrderAsync(1000, 1234);
+                var result = await repository.GetOrderAsync(1111, 1234);
 
                 result.Should().NotBeNull();
                 result.Id.Should().Be(1234);

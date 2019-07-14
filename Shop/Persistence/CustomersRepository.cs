@@ -35,6 +35,16 @@ namespace Shop.Persistence
             return _mapper.Map<CustomerDto>(result);
         }
 
+        public async Task<IEnumerable<CustomerDto>> GetCustomersByNameAsync(string name, bool includeOrders = false)
+        {
+            var nameUpper = name.ToUpper();
+            return await _context.Customers
+                .IncludeIf(c => c.Orders, includeOrders)
+                .Where(c => c.Name.ToUpper().Contains(nameUpper))
+                .Select(o => _mapper.Map<CustomerDto>(o))
+                .ToArrayAsync();
+        }
+
         public async Task<IEnumerable<OrderDto>> GetOrdersAsync(int customerId)
         {
             var customer = await GetCustomerAsync(customerId);

@@ -30,6 +30,9 @@ namespace Shop.Tests.Persistence
                 .With(c => c.Email = Faker.Internet.Email())
                 .Build();
 
+            var customer = new Customer { Id = 1111, Name = "Elon Musk", Email = "elon.musk@mars.com" };
+            customers.Add(customer);
+
             var priceGenerator = new RandomGenerator();
             var daysGenerator = new RandomGenerator();
             id = 1000;
@@ -46,7 +49,7 @@ namespace Shop.Tests.Persistence
                 .With(o => o.Id = 1234)
                 .With(o => o.Price = priceGenerator.Next(0m, 99999.99m))
                 .With(o => o.CreatedDate = DateTime.Now.AddDays(-daysGenerator.Next(1, 300)))
-                .With(o => o.CustomerId = 1000)
+                .With(o => o.CustomerId = customer.Id)
                 .Build();
             orders.Add(order);
 

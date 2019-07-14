@@ -41,6 +41,51 @@ namespace Shop.Tests.Web
         }
 
         [Fact]
+        public async Task GetCustomersByName_ValidName_ReturnsCollection()
+        {
+            var customers = new[] { new CustomerDto() { Id = 1, Name = "Elon Musk", Email = "elon.musk@mars.com" } };
+
+            var mockRepository = Substitute.For<ICustomersRepository>();
+            mockRepository.GetCustomersByNameAsync("musk").Returns(customers);
+
+            var controller = new CustomersController(mockRepository);
+
+            var response = await controller.GetCustomersByName("musk");
+
+            response.Should().NotBeNull();
+            response.Result.Should().BeOfType<OkObjectResult>()
+                .Which.StatusCode.Should().Be((int)HttpStatusCode.OK);
+
+            var ok = response.Result as OkObjectResult;
+            ok.Value.Should().BeAssignableTo<IEnumerable<CustomerDto>>();
+            ok.Value.Should().BeEquivalentTo(customers, opt => opt.IgnoringCyclicReferences());
+
+            await mockRepository.Received().GetCustomersByNameAsync("musk");
+        }
+
+        [Fact]
+        public async Task GetCustomersByName_NameNotExists_ReturnsEmpty()
+        {
+            var customers = new CustomerDto[] { };
+            var mockRepository = Substitute.For<ICustomersRepository>();
+            mockRepository.GetCustomersByNameAsync("mask").Returns(customers);
+
+            var controller = new CustomersController(mockRepository);
+
+            var response = await controller.GetCustomersByName("mask");
+
+            response.Should().NotBeNull();
+            response.Result.Should().BeOfType<OkObjectResult>()
+                .Which.StatusCode.Should().Be((int)HttpStatusCode.OK);
+
+            var ok = response.Result as OkObjectResult;
+            ok.Value.Should().BeAssignableTo<IEnumerable<CustomerDto>>();
+            ok.Value.Should().BeEquivalentTo(customers, opt => opt.IgnoringCyclicReferences());
+
+            await mockRepository.Received().GetCustomersByNameAsync("mask");
+        }
+
+        [Fact]
         public async Task GetCustomer_ValidId_ReturnsOk()
         {
             var customer = new CustomerDto() { Id = 1, Name = "Elon Musk", Email = "elon.musk@mars.com" };

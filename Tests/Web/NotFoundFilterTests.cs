@@ -14,7 +14,7 @@ using Shop.Application.Dto;
 using Shop.Domain;
 using Shop.Domain.Entities;
 using Shop.Web.Controllers;
-using Shop.Web.Filters;
+using Shop.Web.Middleware;
 using Xunit;
 
 namespace Shop.Tests.Web
