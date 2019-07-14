@@ -53,20 +53,13 @@
             </summary>
             <example>2019-02-13</example>
         </member>
-        <member name="M:Shop.Web.Controllers.CustomersController.GetCustomersByName(System.String,System.Boolean)">
+        <member name="M:Shop.Web.Controllers.CustomersController.GetCustomers(System.String,System.Boolean)">
             <summary>
             Retrieves a customer by name.
             </summary>
             <param name="name">Name of the customer.</param>
             <param name="includeOrders">Set <value>true</value> to include orders in results.</param>
             <returns>Customer details.</returns>
-        </member>
-        <member name="M:Shop.Web.Controllers.CustomersController.GetCustomers(System.Boolean)">
-            <summary>
-            Retrieves all the customers.
-            </summary>
-            <param name="includeOrders">Set <value>true</value> to include orders in results.</param>
-            <returns>All the customers.</returns>
         </member>
         <member name="M:Shop.Web.Controllers.CustomersController.GetCustomer(System.Int32,System.Boolean)">
             <summary>

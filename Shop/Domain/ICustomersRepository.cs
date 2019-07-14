@@ -6,9 +6,8 @@ namespace Shop.Domain
 {
     public interface ICustomersRepository
     {
-        Task<IEnumerable<CustomerDto>> GetCustomersAsync(bool includeOrders = false);
+        Task<IEnumerable<CustomerDto>> GetCustomersAsync(string name = null, bool includeOrders = false);
         Task<CustomerDto> GetCustomerAsync(int id, bool includeOrders = false);
-        Task<IEnumerable<CustomerDto>> GetCustomersByNameAsync(string name, bool includeOrders = false);
 
         Task<IEnumerable<OrderDto>> GetOrdersAsync(int customerId);
         Task<OrderDto> GetOrderAsync(int customerId, int orderId);

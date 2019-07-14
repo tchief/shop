@@ -23,18 +23,8 @@ namespace Shop.Web.Controllers
         /// <param name="includeOrders">Set <value>true</value> to include orders in results.</param>
         /// <returns>Customer details.</returns>
         [HttpGet]
-        //[ExactQueryParam("name")]
-        public async Task<ActionResult<IEnumerable<CustomerDto>>> GetCustomersByName([RequiredFromQuery]string name, bool includeOrders = false)
-            => Ok(await _repository.GetCustomersByNameAsync(name, includeOrders));
-
-        /// <summary>
-        /// Retrieves all the customers.
-        /// </summary>
-        /// <param name="includeOrders">Set <value>true</value> to include orders in results.</param>
-        /// <returns>All the customers.</returns>
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<CustomerDto>>> GetCustomers(bool includeOrders = false)
-            => Ok(await _repository.GetCustomersAsync(includeOrders));
+        public async Task<ActionResult<IEnumerable<CustomerDto>>> GetCustomers([FromQuery]string name = null, bool includeOrders = false)
+            => Ok(await _repository.GetCustomersAsync(name, includeOrders));
 
         /// <summary>
         /// Retrieves a customer by id.

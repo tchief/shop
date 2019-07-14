@@ -46,7 +46,7 @@ namespace Shop.Tests.Persistence
             using (var context = new CustomersDbContext(_options))
             {
                 var repository = new CustomersRepository(context, _mapper);
-                var result = (await repository.GetCustomersAsync(true)).ToList();
+                var result = (await repository.GetCustomersAsync(includeOrders: true)).ToList();
 
                 result.Should().NotBeEmpty();
                 result.SelectMany(c => c.Orders).Should().NotBeEmpty();
@@ -97,7 +97,7 @@ namespace Shop.Tests.Persistence
             using (var context = new CustomersDbContext(_options))
             {
                 var repository = new CustomersRepository(context, _mapper);
-                var result = (await repository.GetCustomersByNameAsync("Elon Musk")).ToArray();
+                var result = (await repository.GetCustomersAsync("Elon Musk")).ToArray();
 
                 result.Should().NotBeEmpty();
                 result[0].Id.Should().BeGreaterThan(0);
@@ -112,7 +112,7 @@ namespace Shop.Tests.Persistence
             using (var context = new CustomersDbContext(_options))
             {
                 var repository = new CustomersRepository(context, _mapper);
-                var result = await repository.GetCustomersByNameAsync("Ned Stark");
+                var result = await repository.GetCustomersAsync("Ned Stark");
 
                 result.Should().BeEmpty();
             }
@@ -124,7 +124,7 @@ namespace Shop.Tests.Persistence
             using (var context = new CustomersDbContext(_options))
             {
                 var repository = new CustomersRepository(context, _mapper);
-                var result = (await repository.GetCustomersByNameAsync("Elon Musk", true)).ToArray();
+                var result = (await repository.GetCustomersAsync("Elon Musk", true)).ToArray();
 
                 result.Should().NotBeEmpty();
                 result[0].Id.Should().BeGreaterThan(0);

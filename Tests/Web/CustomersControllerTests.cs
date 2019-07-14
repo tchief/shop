@@ -41,16 +41,16 @@ namespace Shop.Tests.Web
         }
 
         [Fact]
-        public async Task GetCustomersByName_ValidName_ReturnsCollection()
+        public async Task GetCustomers_ValidName_ReturnsCollection()
         {
             var customers = new[] { new CustomerDto() { Id = 1, Name = "Elon Musk", Email = "elon.musk@mars.com" } };
 
             var mockRepository = Substitute.For<ICustomersRepository>();
-            mockRepository.GetCustomersByNameAsync("musk").Returns(customers);
+            mockRepository.GetCustomersAsync("musk").Returns(customers);
 
             var controller = new CustomersController(mockRepository);
 
-            var response = await controller.GetCustomersByName("musk");
+            var response = await controller.GetCustomers("musk");
 
             response.Should().NotBeNull();
             response.Result.Should().BeOfType<OkObjectResult>()
@@ -60,19 +60,19 @@ namespace Shop.Tests.Web
             ok.Value.Should().BeAssignableTo<IEnumerable<CustomerDto>>();
             ok.Value.Should().BeEquivalentTo(customers, opt => opt.IgnoringCyclicReferences());
 
-            await mockRepository.Received().GetCustomersByNameAsync("musk");
+            await mockRepository.Received().GetCustomersAsync("musk");
         }
 
         [Fact]
-        public async Task GetCustomersByName_NameNotExists_ReturnsEmpty()
+        public async Task GetCustomers_NameNotExists_ReturnsEmpty()
         {
             var customers = new CustomerDto[] { };
             var mockRepository = Substitute.For<ICustomersRepository>();
-            mockRepository.GetCustomersByNameAsync("mask").Returns(customers);
+            mockRepository.GetCustomersAsync("mask").Returns(customers);
 
             var controller = new CustomersController(mockRepository);
 
-            var response = await controller.GetCustomersByName("mask");
+            var response = await controller.GetCustomers("mask");
 
             response.Should().NotBeNull();
             response.Result.Should().BeOfType<OkObjectResult>()
@@ -82,7 +82,7 @@ namespace Shop.Tests.Web
             ok.Value.Should().BeAssignableTo<IEnumerable<CustomerDto>>();
             ok.Value.Should().BeEquivalentTo(customers, opt => opt.IgnoringCyclicReferences());
 
-            await mockRepository.Received().GetCustomersByNameAsync("mask");
+            await mockRepository.Received().GetCustomersAsync("mask");
         }
 
         [Fact]

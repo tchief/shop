@@ -20,13 +20,6 @@ namespace Shop.Persistence
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<CustomerDto>> GetCustomersAsync(bool includeOrders = false)
-        {
-            return await _context.Customers.IncludeIf(c => c.Orders, includeOrders)
-                .Select(o => _mapper.Map<CustomerDto>(o))
-                .ToArrayAsync();
-        }
-
         public async Task<CustomerDto> GetCustomerAsync(int id, bool includeOrders = false)
         {
             var result = await _context.Customers
@@ -35,14 +28,17 @@ namespace Shop.Persistence
             return _mapper.Map<CustomerDto>(result);
         }
 
-        public async Task<IEnumerable<CustomerDto>> GetCustomersByNameAsync(string name, bool includeOrders = false)
+        public async Task<IEnumerable<CustomerDto>> GetCustomersAsync(string name = null, bool includeOrders = false)
         {
-            var nameUpper = name.ToUpper();
-            return await _context.Customers
-                .IncludeIf(c => c.Orders, includeOrders)
-                .Where(c => c.Name.ToUpper().Contains(nameUpper))
-                .Select(o => _mapper.Map<CustomerDto>(o))
-                .ToArrayAsync();
+            var query = _context.Customers.IncludeIf(c => c.Orders, includeOrders);
+
+            if (!string.IsNullOrWhiteSpace(name))
+            {
+                var nameUpper = name.ToUpper();
+                query = query.Where(c => c.Name.ToUpper().Contains(nameUpper));
+            }
+
+            return await query.Select(o => _mapper.Map<CustomerDto>(o)).ToArrayAsync();
         }
 
         public async Task<IEnumerable<OrderDto>> GetOrdersAsync(int customerId)
